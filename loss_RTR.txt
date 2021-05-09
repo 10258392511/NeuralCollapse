@@ -1,0 +1,785 @@
+Compiling cost function...
+Computing gradient of cost function...
+Computing Hessian of cost function...
+Optimizing...
+                                            f: -2.250956e+01   |grad|: 1.912189e+00
+REJ TR-   k:     1     num_inner:     0     f: -2.250956e+01   |grad|: 1.912189e+00   negative curvature
+acc       k:     2     num_inner:     0     f: -2.360982e+01   |grad|: 3.891823e+00   negative curvature
+REJ TR-   k:     3     num_inner:     0     f: -2.360982e+01   |grad|: 3.891823e+00   negative curvature
+acc TR-   k:     4     num_inner:     0     f: -2.382390e+01   |grad|: 3.508769e+00   negative curvature
+acc TR+   k:     5     num_inner:     0     f: -2.404566e+01   |grad|: 4.806283e+00   negative curvature
+acc       k:     6     num_inner:     0     f: -2.461696e+01   |grad|: 9.806309e+00   negative curvature
+REJ TR-   k:     7     num_inner:     1     f: -2.461696e+01   |grad|: 9.806309e+00   negative curvature
+acc       k:     8     num_inner:     0     f: -2.468054e+01   |grad|: 1.259522e+01   exceeded trust region
+acc       k:     9     num_inner:     0     f: -2.480833e+01   |grad|: 1.125820e+01   negative curvature
+REJ TR-   k:    10     num_inner:     0     f: -2.480833e+01   |grad|: 1.125820e+01   exceeded trust region
+acc TR+   k:    11     num_inner:     0     f: -2.487271e+01   |grad|: 7.509669e+00   exceeded trust region
+REJ TR-   k:    12     num_inner:     1     f: -2.487271e+01   |grad|: 7.509669e+00   exceeded trust region
+acc TR+   k:    13     num_inner:     0     f: -2.489278e+01   |grad|: 4.058483e+00   exceeded trust region
+acc TR+   k:    14     num_inner:     1     f: -2.490935e+01   |grad|: 3.880997e+00   negative curvature
+acc TR+   k:    15     num_inner:     1     f: -2.494552e+01   |grad|: 4.176365e+00   negative curvature
+acc TR+   k:    16     num_inner:     1     f: -2.502618e+01   |grad|: 4.640714e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:    17     num_inner:     1     f: -2.523327e+01   |grad|: 6.672995e+00   negative curvature
+acc TR-   k:    18     num_inner:     1     f: -2.532835e+01   |grad|: 1.020703e+01   negative curvature
+acc       k:    19     num_inner:     0     f: -2.543631e+01   |grad|: 1.371880e+01   exceeded trust region
+acc TR-   k:    20     num_inner:     0     f: -2.547518e+01   |grad|: 1.424660e+01   exceeded trust region
+acc TR+   k:    21     num_inner:     0     f: -2.556346e+01   |grad|: 1.115089e+01   exceeded trust region
+acc       k:    22     num_inner:     0     f: -2.560852e+01   |grad|: 1.054862e+01   exceeded trust region
+acc       k:    23     num_inner:     1     f: -2.565616e+01   |grad|: 1.171345e+01   negative curvature
+acc       k:    24     num_inner:     0     f: -2.572735e+01   |grad|: 1.132064e+01   exceeded trust region
+acc       k:    25     num_inner:     1     f: -2.575581e+01   |grad|: 9.343739e+00   exceeded trust region
+acc       k:    26     num_inner:     2     f: -2.577968e+01   |grad|: 7.638873e+00   exceeded trust region
+REJ TR-   k:    27     num_inner:     0     f: -2.577968e+01   |grad|: 7.638873e+00   exceeded trust region
+acc TR+   k:    28     num_inner:     0     f: -2.580196e+01   |grad|: 4.946884e+00   exceeded trust region
+acc TR+   k:    29     num_inner:     1     f: -2.581927e+01   |grad|: 3.804020e+00   negative curvature
+acc TR+   k:    30     num_inner:     1     f: -2.585426e+01   |grad|: 3.897203e+00   negative curvature
+acc TR+   k:    31     num_inner:     1     f: -2.593155e+01   |grad|: 4.480211e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:    32     num_inner:     1     f: -2.614197e+01   |grad|: 7.047618e+00   negative curvature
+REJ TR-   k:    33     num_inner:     1     f: -2.614197e+01   |grad|: 7.047618e+00   negative curvature
+acc TR+   k:    34     num_inner:     1     f: -2.628295e+01   |grad|: 9.538694e+00   negative curvature
+REJ TR-   k:    35     num_inner:     1     f: -2.628295e+01   |grad|: 9.538694e+00   exceeded trust region
+acc       k:    36     num_inner:     0     f: -2.632837e+01   |grad|: 8.486073e+00   exceeded trust region
+acc       k:    37     num_inner:     1     f: -2.637157e+01   |grad|: 8.025151e+00   exceeded trust region
+acc       k:    38     num_inner:     1     f: -2.640261e+01   |grad|: 9.435880e+00   exceeded trust region
+acc       k:    39     num_inner:     0     f: -2.645153e+01   |grad|: 1.046700e+01   exceeded trust region
+acc       k:    40     num_inner:     0     f: -2.651881e+01   |grad|: 1.114753e+01   exceeded trust region
+acc       k:    41     num_inner:     0     f: -2.655277e+01   |grad|: 8.952630e+00   exceeded trust region
+acc       k:    42     num_inner:     1     f: -2.658009e+01   |grad|: 7.719923e+00   exceeded trust region
+acc       k:    43     num_inner:     2     f: -2.660859e+01   |grad|: 6.175329e+00   negative curvature
+acc       k:    44     num_inner:     2     f: -2.663015e+01   |grad|: 6.832899e+00   negative curvature
+acc       k:    45     num_inner:     2     f: -2.665653e+01   |grad|: 6.216195e+00   negative curvature
+acc       k:    46     num_inner:     2     f: -2.668069e+01   |grad|: 6.476704e+00   negative curvature
+acc       k:    47     num_inner:     2     f: -2.670569e+01   |grad|: 6.508165e+00   negative curvature
+acc       k:    48     num_inner:     2     f: -2.673078e+01   |grad|: 6.609871e+00   negative curvature
+acc       k:    49     num_inner:     2     f: -2.675581e+01   |grad|: 6.750018e+00   negative curvature
+acc       k:    50     num_inner:     2     f: -2.678035e+01   |grad|: 6.938438e+00   negative curvature
+acc       k:    51     num_inner:     2     f: -2.680274e+01   |grad|: 7.260961e+00   negative curvature
+acc       k:    52     num_inner:     2     f: -2.681513e+01   |grad|: 7.877873e+00   negative curvature
+REJ TR-   k:    53     num_inner:     0     f: -2.681513e+01   |grad|: 7.877873e+00   exceeded trust region
+acc TR+   k:    54     num_inner:     0     f: -2.683816e+01   |grad|: 5.215905e+00   exceeded trust region
+acc TR+   k:    55     num_inner:     1     f: -2.685522e+01   |grad|: 3.877258e+00   negative curvature
+acc TR+   k:    56     num_inner:     1     f: -2.688961e+01   |grad|: 3.659867e+00   negative curvature
+acc TR+   k:    57     num_inner:     1     f: -2.696252e+01   |grad|: 4.201441e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:    58     num_inner:     1     f: -2.714104e+01   |grad|: 5.434249e+00   negative curvature
+acc       k:    59     num_inner:     1     f: -2.753565e+01   |grad|: 9.016245e+00   negative curvature
+REJ TR-   k:    60     num_inner:     2     f: -2.753565e+01   |grad|: 9.016245e+00   negative curvature
+acc TR-   k:    61     num_inner:     1     f: -2.755015e+01   |grad|: 1.075703e+01   exceeded trust region
+acc TR+   k:    62     num_inner:     0     f: -2.761950e+01   |grad|: 1.066168e+01   exceeded trust region
+acc TR+   k:    63     num_inner:     0     f: -2.774678e+01   |grad|: 4.969798e+00   negative curvature
+acc TR+   k:    64     num_inner:     1     f: -2.781684e+01   |grad|: 4.523918e+00   negative curvature
+acc TR+   k:    65     num_inner:     1     f: -2.798140e+01   |grad|: 7.240108e+00   negative curvature
+REJ TR-   k:    66     num_inner:     2     f: -2.798140e+01   |grad|: 7.240108e+00   negative curvature
+acc TR+   k:    67     num_inner:     1     f: -2.808581e+01   |grad|: 1.072975e+01   exceeded trust region
+REJ TR-   k:    68     num_inner:     1     f: -2.808581e+01   |grad|: 1.072975e+01   negative curvature
+acc       k:    69     num_inner:     0     f: -2.816888e+01   |grad|: 1.074929e+01   exceeded trust region
+acc       k:    70     num_inner:     0     f: -2.821720e+01   |grad|: 8.906719e+00   exceeded trust region
+acc       k:    71     num_inner:     1     f: -2.825358e+01   |grad|: 7.606116e+00   exceeded trust region
+acc       k:    72     num_inner:     1     f: -2.827349e+01   |grad|: 8.351564e+00   exceeded trust region
+acc TR-   k:    73     num_inner:     0     f: -2.828154e+01   |grad|: 9.889349e+00   exceeded trust region
+acc TR+   k:    74     num_inner:     0     f: -2.831023e+01   |grad|: 6.942211e+00   exceeded trust region
+acc       k:    75     num_inner:     0     f: -2.833042e+01   |grad|: 5.403159e+00   exceeded trust region
+acc TR+   k:    76     num_inner:     1     f: -2.834825e+01   |grad|: 6.024476e+00   negative curvature
+acc TR+   k:    77     num_inner:     1     f: -2.840194e+01   |grad|: 7.635478e+00   negative curvature
+acc       k:    78     num_inner:     1     f: -2.851218e+01   |grad|: 8.484006e+00   negative curvature
+REJ TR-   k:    79     num_inner:     0     f: -2.851218e+01   |grad|: 8.484006e+00   exceeded trust region
+acc TR+   k:    80     num_inner:     0     f: -2.855802e+01   |grad|: 4.615805e+00   exceeded trust region
+acc TR+   k:    81     num_inner:     1     f: -2.858583e+01   |grad|: 4.345402e+00   exceeded trust region
+acc TR+   k:    82     num_inner:     1     f: -2.864391e+01   |grad|: 5.151323e+00   exceeded trust region
+acc TR+   k:    83     num_inner:     1     f: -2.873473e+01   |grad|: 1.455524e+01   exceeded trust region
+REJ TR-   k:    84     num_inner:     2     f: -2.873473e+01   |grad|: 1.455524e+01   exceeded trust region
+acc TR-   k:    85     num_inner:     1     f: -2.876825e+01   |grad|: 1.239167e+01   exceeded trust region
+acc TR+   k:    86     num_inner:     0     f: -2.883674e+01   |grad|: 9.989701e+00   exceeded trust region
+acc TR+   k:    87     num_inner:     0     f: -2.896551e+01   |grad|: 7.550595e+00   negative curvature
+REJ TR-   k:    88     num_inner:     2     f: -2.896551e+01   |grad|: 7.550595e+00   negative curvature
+acc       k:    89     num_inner:     0     f: -2.899517e+01   |grad|: 2.124236e+00   exceeded trust region
+acc TR+   k:    90     num_inner:     1     f: -2.900537e+01   |grad|: 2.970523e+00   negative curvature
+acc TR+   k:    91     num_inner:     1     f: -2.903018e+01   |grad|: 2.407356e+00   negative curvature
+acc TR+   k:    92     num_inner:     1     f: -2.908010e+01   |grad|: 2.890566e+00   negative curvature
+acc TR+   k:    93     num_inner:     1     f: -2.919454e+01   |grad|: 3.149769e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:    94     num_inner:     1     f: -2.954075e+01   |grad|: 8.899484e+00   negative curvature
+REJ TR-   k:    95     num_inner:     1     f: -2.954075e+01   |grad|: 8.899484e+00   negative curvature
+REJ TR-   k:    96     num_inner:     1     f: -2.954075e+01   |grad|: 8.899484e+00   negative curvature
+acc       k:    97     num_inner:     0     f: -2.957581e+01   |grad|: 8.146678e+00   exceeded trust region
+acc       k:    98     num_inner:     2     f: -2.959667e+01   |grad|: 7.070190e+00   exceeded trust region
+REJ TR-   k:    99     num_inner:     2     f: -2.959667e+01   |grad|: 7.070190e+00   negative curvature
+acc TR+   k:   100     num_inner:     0     f: -2.961535e+01   |grad|: 3.447483e+00   exceeded trust region
+acc TR+   k:   101     num_inner:     1     f: -2.962889e+01   |grad|: 2.394395e+00   negative curvature
+acc TR+   k:   102     num_inner:     1     f: -2.965336e+01   |grad|: 3.003051e+00   negative curvature
+acc TR+   k:   103     num_inner:     1     f: -2.970725e+01   |grad|: 2.724195e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   104     num_inner:     1     f: -2.982481e+01   |grad|: 3.486017e+00   negative curvature
+acc TR+   k:   105     num_inner:     1     f: -3.016939e+01   |grad|: 5.983798e+00   negative curvature
+REJ TR-   k:   106     num_inner:     1     f: -3.016939e+01   |grad|: 5.983798e+00   negative curvature
+acc       k:   107     num_inner:     1     f: -3.030077e+01   |grad|: 1.102619e+01   negative curvature
+REJ TR-   k:   108     num_inner:     0     f: -3.030077e+01   |grad|: 1.102619e+01   negative curvature
+acc TR+   k:   109     num_inner:     0     f: -3.044348e+01   |grad|: 9.561907e+00   negative curvature
+acc TR-   k:   110     num_inner:     0     f: -3.050673e+01   |grad|: 8.892989e+00   exceeded trust region
+acc TR+   k:   111     num_inner:     0     f: -3.055545e+01   |grad|: 7.950057e+00   exceeded trust region
+acc       k:   112     num_inner:     0     f: -3.060089e+01   |grad|: 6.866888e+00   negative curvature
+acc       k:   113     num_inner:     2     f: -3.062727e+01   |grad|: 5.839840e+00   exceeded trust region
+acc       k:   114     num_inner:     2     f: -3.064897e+01   |grad|: 6.490569e+00   negative curvature
+acc TR+   k:   115     num_inner:     2     f: -3.067172e+01   |grad|: 6.763545e+00   negative curvature
+acc TR+   k:   116     num_inner:     2     f: -3.073080e+01   |grad|: 6.131969e+00   negative curvature
+acc TR+   k:   117     num_inner:     2     f: -3.086433e+01   |grad|: 8.515418e+00   negative curvature
+REJ TR-   k:   118     num_inner:     2     f: -3.086433e+01   |grad|: 8.515418e+00   negative curvature
+acc       k:   119     num_inner:     2     f: -3.093865e+01   |grad|: 9.836942e+00   negative curvature
+REJ TR-   k:   120     num_inner:     0     f: -3.093865e+01   |grad|: 9.836942e+00   exceeded trust region
+acc TR+   k:   121     num_inner:     0     f: -3.099759e+01   |grad|: 7.543982e+00   exceeded trust region
+acc TR+   k:   122     num_inner:     0     f: -3.105085e+01   |grad|: 1.090166e+01   exceeded trust region
+REJ TR-   k:   123     num_inner:     0     f: -3.105085e+01   |grad|: 1.090166e+01   exceeded trust region
+acc TR+   k:   124     num_inner:     0     f: -3.111343e+01   |grad|: 7.015938e+00   exceeded trust region
+acc       k:   125     num_inner:     2     f: -3.113077e+01   |grad|: 7.132447e+00   negative curvature
+REJ TR-   k:   126     num_inner:     2     f: -3.113077e+01   |grad|: 7.132447e+00   negative curvature
+acc TR+   k:   127     num_inner:     0     f: -3.114958e+01   |grad|: 3.513003e+00   exceeded trust region
+acc TR+   k:   128     num_inner:     1     f: -3.116380e+01   |grad|: 2.665499e+00   negative curvature
+acc TR+   k:   129     num_inner:     1     f: -3.119085e+01   |grad|: 3.299091e+00   negative curvature
+acc TR+   k:   130     num_inner:     1     f: -3.125379e+01   |grad|: 3.409981e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   131     num_inner:     1     f: -3.144010e+01   |grad|: 6.858232e+00   negative curvature
+REJ TR-   k:   132     num_inner:     1     f: -3.144010e+01   |grad|: 6.858232e+00   negative curvature
+acc       k:   133     num_inner:     1     f: -3.151091e+01   |grad|: 9.555135e+00   negative curvature
+REJ TR-   k:   134     num_inner:     0     f: -3.151091e+01   |grad|: 9.555135e+00   exceeded trust region
+acc TR+   k:   135     num_inner:     0     f: -3.156373e+01   |grad|: 6.709334e+00   exceeded trust region
+acc       k:   136     num_inner:     2     f: -3.157744e+01   |grad|: 7.322873e+00   negative curvature
+acc TR-   k:   137     num_inner:     2     f: -3.158422e+01   |grad|: 7.585947e+00   negative curvature
+acc TR+   k:   138     num_inner:     0     f: -3.160663e+01   |grad|: 4.997433e+00   exceeded trust region
+acc TR+   k:   139     num_inner:     1     f: -3.162195e+01   |grad|: 2.901390e+00   negative curvature
+acc TR+   k:   140     num_inner:     1     f: -3.164735e+01   |grad|: 2.484354e+00   negative curvature
+acc TR+   k:   141     num_inner:     1     f: -3.169927e+01   |grad|: 3.042614e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   142     num_inner:     1     f: -3.181997e+01   |grad|: 3.331058e+00   negative curvature
+acc TR+   k:   143     num_inner:     1     f: -3.222954e+01   |grad|: 8.303634e+00   negative curvature
+REJ TR-   k:   144     num_inner:     1     f: -3.222954e+01   |grad|: 8.303634e+00   negative curvature
+REJ TR-   k:   145     num_inner:     1     f: -3.222954e+01   |grad|: 8.303634e+00   negative curvature
+acc TR+   k:   146     num_inner:     0     f: -3.231683e+01   |grad|: 1.116193e+01   exceeded trust region
+REJ TR-   k:   147     num_inner:     0     f: -3.231683e+01   |grad|: 1.116193e+01   exceeded trust region
+acc TR+   k:   148     num_inner:     0     f: -3.238110e+01   |grad|: 7.588759e+00   exceeded trust region
+acc       k:   149     num_inner:     0     f: -3.242296e+01   |grad|: 1.065265e+01   exceeded trust region
+acc       k:   150     num_inner:     0     f: -3.250959e+01   |grad|: 7.643245e+00   exceeded trust region
+acc       k:   151     num_inner:     2     f: -3.253793e+01   |grad|: 6.030992e+00   negative curvature
+acc       k:   152     num_inner:     2     f: -3.256062e+01   |grad|: 6.435112e+00   negative curvature
+acc       k:   153     num_inner:     1     f: -3.258180e+01   |grad|: 7.248221e+00   exceeded trust region
+acc       k:   154     num_inner:     2     f: -3.260598e+01   |grad|: 7.288297e+00   negative curvature
+acc TR-   k:   155     num_inner:     2     f: -3.261726e+01   |grad|: 8.205823e+00   negative curvature
+acc TR+   k:   156     num_inner:     0     f: -3.264173e+01   |grad|: 5.818026e+00   exceeded trust region
+acc       k:   157     num_inner:     1     f: -3.265723e+01   |grad|: 5.114105e+00   negative curvature
+acc TR+   k:   158     num_inner:     1     f: -3.267482e+01   |grad|: 4.984608e+00   negative curvature
+acc TR+   k:   159     num_inner:     1     f: -3.272152e+01   |grad|: 6.422452e+00   negative curvature
+acc TR+   k:   160     num_inner:     1     f: -3.285868e+01   |grad|: 7.983155e+00   negative curvature
+REJ TR-   k:   161     num_inner:     2     f: -3.285868e+01   |grad|: 7.983155e+00   negative curvature
+REJ TR-   k:   162     num_inner:     0     f: -3.285868e+01   |grad|: 7.983155e+00   exceeded trust region
+acc TR+   k:   163     num_inner:     0     f: -3.288189e+01   |grad|: 5.234732e+00   exceeded trust region
+acc TR+   k:   164     num_inner:     1     f: -3.289427e+01   |grad|: 3.247362e+00   exceeded trust region
+acc TR+   k:   165     num_inner:     1     f: -3.291322e+01   |grad|: 2.097624e+00   exceeded trust region
+acc TR+   k:   166     num_inner:     1     f: -3.294938e+01   |grad|: 1.764431e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   167     num_inner:     1     f: -3.302519e+01   |grad|: 2.231513e+00   negative curvature
+acc TR+   k:   168     num_inner:     1     f: -3.320641e+01   |grad|: 2.529340e+00   negative curvature
+acc       k:   169     num_inner:     1     f: -3.350916e+01   |grad|: 5.460726e+00   negative curvature
+acc       k:   170     num_inner:     1     f: -3.386912e+01   |grad|: 2.075378e+01   exceeded trust region
+REJ TR-   k:   171     num_inner:     2     f: -3.386912e+01   |grad|: 2.075378e+01   negative curvature
+REJ TR-   k:   172     num_inner:     1     f: -3.386912e+01   |grad|: 2.075378e+01   exceeded trust region
+acc TR+   k:   173     num_inner:     0     f: -3.405830e+01   |grad|: 1.044204e+01   exceeded trust region
+acc TR-   k:   174     num_inner:     1     f: -3.407874e+01   |grad|: 1.299186e+01   negative curvature
+acc TR+   k:   175     num_inner:     0     f: -3.414563e+01   |grad|: 8.272340e+00   exceeded trust region
+acc       k:   176     num_inner:     0     f: -3.418337e+01   |grad|: 7.805860e+00   exceeded trust region
+acc       k:   177     num_inner:     2     f: -3.420784e+01   |grad|: 7.143483e+00   exceeded trust region
+acc       k:   178     num_inner:     2     f: -3.421979e+01   |grad|: 7.894393e+00   negative curvature
+REJ TR-   k:   179     num_inner:     0     f: -3.421979e+01   |grad|: 7.894393e+00   exceeded trust region
+acc TR+   k:   180     num_inner:     0     f: -3.424276e+01   |grad|: 5.191119e+00   exceeded trust region
+acc TR+   k:   181     num_inner:     1     f: -3.426000e+01   |grad|: 4.018104e+00   negative curvature
+acc TR+   k:   182     num_inner:     1     f: -3.429783e+01   |grad|: 4.416240e+00   negative curvature
+acc TR+   k:   183     num_inner:     1     f: -3.440667e+01   |grad|: 7.703086e+00   negative curvature
+REJ TR-   k:   184     num_inner:     1     f: -3.440667e+01   |grad|: 7.703086e+00   negative curvature
+acc TR+   k:   185     num_inner:     0     f: -3.446326e+01   |grad|: 1.060242e+01   exceeded trust region
+REJ TR-   k:   186     num_inner:     0     f: -3.446326e+01   |grad|: 1.060242e+01   exceeded trust region
+acc TR+   k:   187     num_inner:     0     f: -3.452162e+01   |grad|: 5.199332e+00   exceeded trust region
+acc TR+   k:   188     num_inner:     2     f: -3.454074e+01   |grad|: 5.171836e+00   negative curvature
+acc TR+   k:   189     num_inner:     1     f: -3.458697e+01   |grad|: 4.105751e+00   exceeded trust region
+acc TR+   k:   190     num_inner:     1     f: -3.468243e+01   |grad|: 8.807853e+00   exceeded trust region
+REJ TR-   k:   191     num_inner:     2     f: -3.468243e+01   |grad|: 8.807853e+00   negative curvature
+acc       k:   192     num_inner:     1     f: -3.475783e+01   |grad|: 9.420330e+00   exceeded trust region
+acc TR-   k:   193     num_inner:     0     f: -3.479594e+01   |grad|: 1.215105e+01   exceeded trust region
+acc TR+   k:   194     num_inner:     0     f: -3.486588e+01   |grad|: 8.743896e+00   exceeded trust region
+acc       k:   195     num_inner:     0     f: -3.491804e+01   |grad|: 7.045573e+00   exceeded trust region
+acc       k:   196     num_inner:     2     f: -3.493544e+01   |grad|: 5.919279e+00   exceeded trust region
+acc       k:   197     num_inner:     2     f: -3.495447e+01   |grad|: 4.654286e+00   negative curvature
+acc TR+   k:   198     num_inner:     2     f: -3.497147e+01   |grad|: 3.694446e+00   negative curvature
+acc TR+   k:   199     num_inner:     1     f: -3.499864e+01   |grad|: 5.056308e+00   exceeded trust region
+acc TR+   k:   200     num_inner:     2     f: -3.506479e+01   |grad|: 4.838896e+00   negative curvature
+acc TR+   k:   201     num_inner:     2     f: -3.522540e+01   |grad|: 5.340748e+00   negative curvature
+acc TR-   k:   202     num_inner:     2     f: -3.529932e+01   |grad|: 1.360731e+01   negative curvature
+REJ TR-   k:   203     num_inner:     1     f: -3.529932e+01   |grad|: 1.360731e+01   exceeded trust region
+acc       k:   204     num_inner:     1     f: -3.536610e+01   |grad|: 8.153574e+00   exceeded trust region
+acc TR+   k:   205     num_inner:     1     f: -3.540457e+01   |grad|: 4.441479e+00   exceeded trust region
+acc TR+   k:   206     num_inner:     1     f: -3.546462e+01   |grad|: 5.036948e+00   exceeded trust region
+acc TR+   k:   207     num_inner:     1     f: -3.559757e+01   |grad|: 1.461026e+01   exceeded trust region
+REJ TR-   k:   208     num_inner:     1     f: -3.559757e+01   |grad|: 1.461026e+01   exceeded trust region
+acc       k:   209     num_inner:     1     f: -3.569750e+01   |grad|: 1.043459e+01   exceeded trust region
+REJ TR-   k:   210     num_inner:     1     f: -3.569750e+01   |grad|: 1.043459e+01   negative curvature
+acc TR+   k:   211     num_inner:     0     f: -3.574897e+01   |grad|: 7.983875e+00   exceeded trust region
+acc TR-   k:   212     num_inner:     0     f: -3.576582e+01   |grad|: 8.147596e+00   exceeded trust region
+acc TR+   k:   213     num_inner:     0     f: -3.578839e+01   |grad|: 4.833535e+00   exceeded trust region
+acc TR+   k:   214     num_inner:     1     f: -3.580349e+01   |grad|: 2.961136e+00   exceeded trust region
+acc TR+   k:   215     num_inner:     1     f: -3.583005e+01   |grad|: 2.708115e+00   negative curvature
+acc TR+   k:   216     num_inner:     1     f: -3.588941e+01   |grad|: 3.639882e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   217     num_inner:     1     f: -3.610220e+01   |grad|: 8.224917e+00   negative curvature
+REJ TR-   k:   218     num_inner:     1     f: -3.610220e+01   |grad|: 8.224917e+00   negative curvature
+REJ TR-   k:   219     num_inner:     0     f: -3.610220e+01   |grad|: 8.224917e+00   exceeded trust region
+acc TR+   k:   220     num_inner:     0     f: -3.615185e+01   |grad|: 7.764943e+00   exceeded trust region
+REJ TR-   k:   221     num_inner:     0     f: -3.615185e+01   |grad|: 7.764943e+00   exceeded trust region
+acc TR+   k:   222     num_inner:     0     f: -3.617470e+01   |grad|: 5.158702e+00   exceeded trust region
+acc TR+   k:   223     num_inner:     1     f: -3.618897e+01   |grad|: 2.920912e+00   exceeded trust region
+acc TR+   k:   224     num_inner:     1     f: -3.621177e+01   |grad|: 2.154820e+00   negative curvature
+acc TR+   k:   225     num_inner:     1     f: -3.625992e+01   |grad|: 3.019539e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   226     num_inner:     1     f: -3.640659e+01   |grad|: 5.015136e+00   negative curvature
+REJ TR-   k:   227     num_inner:     1     f: -3.640659e+01   |grad|: 5.015136e+00   negative curvature
+acc TR+   k:   228     num_inner:     1     f: -3.654182e+01   |grad|: 9.953663e+00   negative curvature
+acc TR-   k:   229     num_inner:     3     f: -3.657299e+01   |grad|: 8.424870e+00   negative curvature
+acc TR+   k:   230     num_inner:     0     f: -3.664197e+01   |grad|: 7.860292e+00   exceeded trust region
+acc       k:   231     num_inner:     2     f: -3.667308e+01   |grad|: 1.011060e+01   exceeded trust region
+REJ TR-   k:   232     num_inner:     1     f: -3.667308e+01   |grad|: 1.011060e+01   exceeded trust region
+acc TR+   k:   233     num_inner:     0     f: -3.671679e+01   |grad|: 3.729102e+00   exceeded trust region
+acc TR+   k:   234     num_inner:     1     f: -3.675375e+01   |grad|: 4.335831e+00   negative curvature
+acc TR+   k:   235     num_inner:     1     f: -3.687237e+01   |grad|: 8.840668e+00   negative curvature
+REJ TR-   k:   236     num_inner:     1     f: -3.687237e+01   |grad|: 8.840668e+00   negative curvature
+acc       k:   237     num_inner:     0     f: -3.693641e+01   |grad|: 7.756987e+00   exceeded trust region
+REJ TR-   k:   238     num_inner:     3     f: -3.693641e+01   |grad|: 7.756987e+00   negative curvature
+acc TR+   k:   239     num_inner:     0     f: -3.695651e+01   |grad|: 3.659238e+00   exceeded trust region
+acc TR+   k:   240     num_inner:     1     f: -3.696406e+01   |grad|: 2.163245e+00   exceeded trust region
+acc TR+   k:   241     num_inner:     1     f: -3.697578e+01   |grad|: 1.088931e+00   exceeded trust region
+acc TR+   k:   242     num_inner:     1     f: -3.699785e+01   |grad|: 1.206190e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   243     num_inner:     1     f: -3.704453e+01   |grad|: 1.250774e+00   negative curvature
+acc TR+   k:   244     num_inner:     1     f: -3.715290e+01   |grad|: 1.563940e+00   negative curvature
+acc TR+   k:   245     num_inner:     1     f: -3.743535e+01   |grad|: 4.415264e+00   negative curvature
+REJ TR-   k:   246     num_inner:     1     f: -3.743535e+01   |grad|: 4.415264e+00   negative curvature
+REJ TR-   k:   247     num_inner:     1     f: -3.743535e+01   |grad|: 4.415264e+00   negative curvature
+acc TR+   k:   248     num_inner:     1     f: -3.756222e+01   |grad|: 1.061059e+01   negative curvature
+REJ TR-   k:   249     num_inner:     2     f: -3.756222e+01   |grad|: 1.061059e+01   reached target residual-kappa (linear)
+acc       k:   250     num_inner:     0     f: -3.759352e+01   |grad|: 8.606068e+00   exceeded trust region
+acc       k:   251     num_inner:     2     f: -3.761889e+01   |grad|: 5.160929e+00   exceeded trust region
+acc TR+   k:   252     num_inner:     2     f: -3.763492e+01   |grad|: 3.738842e+00   negative curvature
+acc TR+   k:   253     num_inner:     2     f: -3.765231e+01   |grad|: 6.145346e+00   negative curvature
+acc TR+   k:   254     num_inner:     2     f: -3.771539e+01   |grad|: 2.711661e+00   negative curvature
+acc TR+   k:   255     num_inner:     1     f: -3.783330e+01   |grad|: 1.046729e+01   exceeded trust region
+REJ TR-   k:   256     num_inner:     3     f: -3.783330e+01   |grad|: 1.046729e+01   negative curvature
+acc TR+   k:   257     num_inner:     2     f: -3.796599e+01   |grad|: 1.192301e+01   exceeded trust region
+REJ TR-   k:   258     num_inner:     1     f: -3.796599e+01   |grad|: 1.192301e+01   negative curvature
+acc TR-   k:   259     num_inner:     0     f: -3.800510e+01   |grad|: 1.587858e+01   exceeded trust region
+acc TR+   k:   260     num_inner:     0     f: -3.809297e+01   |grad|: 1.058982e+01   exceeded trust region
+acc       k:   261     num_inner:     0     f: -3.812142e+01   |grad|: 9.058185e+00   exceeded trust region
+acc       k:   262     num_inner:     3     f: -3.814785e+01   |grad|: 5.216239e+00   exceeded trust region
+acc TR+   k:   263     num_inner:     2     f: -3.816455e+01   |grad|: 2.936960e+00   negative curvature
+acc TR+   k:   264     num_inner:     1     f: -3.817981e+01   |grad|: 5.818867e+00   exceeded trust region
+acc TR+   k:   265     num_inner:     2     f: -3.823481e+01   |grad|: 3.473387e+00   negative curvature
+acc TR+   k:   266     num_inner:     2     f: -3.835406e+01   |grad|: 7.893736e+00   negative curvature
+REJ TR-   k:   267     num_inner:     2     f: -3.835406e+01   |grad|: 7.893736e+00   negative curvature
+acc TR+   k:   268     num_inner:     2     f: -3.849186e+01   |grad|: 8.357797e+00   negative curvature
+REJ TR-   k:   269     num_inner:     2     f: -3.849186e+01   |grad|: 8.357797e+00   negative curvature
+acc TR+   k:   270     num_inner:     1     f: -3.858301e+01   |grad|: 1.084798e+01   exceeded trust region
+REJ TR-   k:   271     num_inner:     1     f: -3.858301e+01   |grad|: 1.084798e+01   negative curvature
+acc       k:   272     num_inner:     0     f: -3.864570e+01   |grad|: 8.768543e+00   exceeded trust region
+acc       k:   273     num_inner:     1     f: -3.866599e+01   |grad|: 3.653306e+00   reached target residual-kappa (linear)
+acc TR+   k:   274     num_inner:     1     f: -3.867709e+01   |grad|: 2.355211e+00   exceeded trust region
+acc TR+   k:   275     num_inner:     1     f: -3.869325e+01   |grad|: 3.524235e+00   exceeded trust region
+acc TR+   k:   276     num_inner:     2     f: -3.872429e+01   |grad|: 5.841797e+00   negative curvature
+acc TR+   k:   277     num_inner:     2     f: -3.881408e+01   |grad|: 2.385692e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   278     num_inner:     1     f: -3.896303e+01   |grad|: 1.481867e+01   exceeded trust region
+REJ TR-   k:   279     num_inner:     4     f: -3.896303e+01   |grad|: 1.481867e+01   negative curvature
+acc       k:   280     num_inner:     4     f: -3.912346e+01   |grad|: 1.173166e+01   negative curvature
+REJ TR-   k:   281     num_inner:     2     f: -3.912346e+01   |grad|: 1.173166e+01   negative curvature
+REJ TR-   k:   282     num_inner:     1     f: -3.912346e+01   |grad|: 1.173166e+01   exceeded trust region
+acc TR+   k:   283     num_inner:     0     f: -3.918489e+01   |grad|: 6.831422e+00   exceeded trust region
+acc TR+   k:   284     num_inner:     1     f: -3.922821e+01   |grad|: 8.574504e+00   negative curvature
+acc       k:   285     num_inner:     1     f: -3.927400e+01   |grad|: 6.717915e+00   negative curvature
+REJ TR-   k:   286     num_inner:     0     f: -3.927400e+01   |grad|: 6.717915e+00   negative curvature
+acc TR+   k:   287     num_inner:     0     f: -3.932117e+01   |grad|: 7.867768e+00   negative curvature
+acc       k:   288     num_inner:     0     f: -3.934744e+01   |grad|: 7.648329e+00   exceeded trust region
+acc TR-   k:   289     num_inner:     3     f: -3.935462e+01   |grad|: 7.156760e+00   negative curvature
+acc TR+   k:   290     num_inner:     0     f: -3.937343e+01   |grad|: 3.336470e+00   exceeded trust region
+acc TR+   k:   291     num_inner:     1     f: -3.938111e+01   |grad|: 1.031749e+00   exceeded trust region
+acc TR+   k:   292     num_inner:     1     f: -3.939125e+01   |grad|: 1.067647e+00   negative curvature
+acc TR+   k:   293     num_inner:     1     f: -3.941210e+01   |grad|: 1.089649e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   294     num_inner:     1     f: -3.945619e+01   |grad|: 1.203458e+00   negative curvature
+acc TR+   k:   295     num_inner:     1     f: -3.955724e+01   |grad|: 1.485993e+00   negative curvature
+acc TR+   k:   296     num_inner:     1     f: -3.989208e+01   |grad|: 3.394612e+00   negative curvature
+REJ TR-   k:   297     num_inner:     1     f: -3.989208e+01   |grad|: 3.394612e+00   negative curvature
+acc TR-   k:   298     num_inner:     1     f: -3.998846e+01   |grad|: 8.701103e+00   negative curvature
+REJ TR-   k:   299     num_inner:     2     f: -3.998846e+01   |grad|: 8.701103e+00   negative curvature
+acc TR+   k:   300     num_inner:     0     f: -4.002526e+01   |grad|: 4.284038e+00   exceeded trust region
+acc TR+   k:   301     num_inner:     0     f: -4.006656e+01   |grad|: 8.638766e+00   exceeded trust region
+acc TR+   k:   302     num_inner:     1     f: -4.020020e+01   |grad|: 1.149740e+01   exceeded trust region
+REJ TR-   k:   303     num_inner:     0     f: -4.020020e+01   |grad|: 1.149740e+01   negative curvature
+acc TR+   k:   304     num_inner:     0     f: -4.033625e+01   |grad|: 1.044925e+01   negative curvature
+REJ TR-   k:   305     num_inner:     0     f: -4.033625e+01   |grad|: 1.044925e+01   exceeded trust region
+acc TR+   k:   306     num_inner:     0     f: -4.039925e+01   |grad|: 8.236184e+00   exceeded trust region
+acc       k:   307     num_inner:     0     f: -4.043405e+01   |grad|: 7.806896e+00   exceeded trust region
+acc       k:   308     num_inner:     2     f: -4.045861e+01   |grad|: 4.063740e+00   negative curvature
+acc TR+   k:   309     num_inner:     1     f: -4.046988e+01   |grad|: 3.592494e+00   exceeded trust region
+acc TR+   k:   310     num_inner:     1     f: -4.048710e+01   |grad|: 5.451103e+00   exceeded trust region
+acc TR+   k:   311     num_inner:     2     f: -4.054401e+01   |grad|: 3.183752e+00   negative curvature
+acc TR+   k:   312     num_inner:     2     f: -4.066622e+01   |grad|: 1.482854e+01   negative curvature
+REJ TR-   k:   313     num_inner:     2     f: -4.066622e+01   |grad|: 1.482854e+01   exceeded trust region
+REJ TR-   k:   314     num_inner:     2     f: -4.066622e+01   |grad|: 1.482854e+01   exceeded trust region
+acc       k:   315     num_inner:     0     f: -4.073880e+01   |grad|: 8.741264e+00   exceeded trust region
+acc TR+   k:   316     num_inner:     1     f: -4.081432e+01   |grad|: 7.096869e+00   negative curvature
+REJ TR-   k:   317     num_inner:     0     f: -4.081432e+01   |grad|: 7.096869e+00   exceeded trust region
+acc TR+   k:   318     num_inner:     0     f: -4.085697e+01   |grad|: 8.006892e+00   exceeded trust region
+acc       k:   319     num_inner:     0     f: -4.089922e+01   |grad|: 7.713367e+00   exceeded trust region
+acc       k:   320     num_inner:     1     f: -4.091587e+01   |grad|: 1.853050e+00   reached target residual-kappa (linear)
+acc TR+   k:   321     num_inner:     1     f: -4.092341e+01   |grad|: 6.454068e-01   exceeded trust region
+acc TR+   k:   322     num_inner:     1     f: -4.093699e+01   |grad|: 7.746049e-01   negative curvature
+acc TR+   k:   323     num_inner:     1     f: -4.096491e+01   |grad|: 6.791089e-01   negative curvature
+acc TR+   k:   324     num_inner:     1     f: -4.102350e+01   |grad|: 8.630891e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   325     num_inner:     1     f: -4.115611e+01   |grad|: 1.086226e+00   negative curvature
+acc TR+   k:   326     num_inner:     1     f: -4.154225e+01   |grad|: 4.203348e+00   negative curvature
+REJ TR-   k:   327     num_inner:     2     f: -4.154225e+01   |grad|: 4.203348e+00   negative curvature
+acc TR+   k:   328     num_inner:     2     f: -4.188600e+01   |grad|: 1.759654e+01   negative curvature
+REJ TR-   k:   329     num_inner:     1     f: -4.188600e+01   |grad|: 1.759654e+01   negative curvature
+REJ TR-   k:   330     num_inner:     1     f: -4.188600e+01   |grad|: 1.759654e+01   negative curvature
+acc       k:   331     num_inner:     1     f: -4.202858e+01   |grad|: 1.558362e+01   negative curvature
+acc       k:   332     num_inner:     3     f: -4.210993e+01   |grad|: 9.434660e+00   negative curvature
+REJ TR-   k:   333     num_inner:     1     f: -4.210993e+01   |grad|: 9.434660e+00   exceeded trust region
+acc TR+   k:   334     num_inner:     0     f: -4.214854e+01   |grad|: 3.363972e+00   exceeded trust region
+acc TR+   k:   335     num_inner:     1     f: -4.218068e+01   |grad|: 3.365527e+00   negative curvature
+acc TR+   k:   336     num_inner:     1     f: -4.226596e+01   |grad|: 6.012321e+00   negative curvature
+REJ TR-   k:   337     num_inner:     1     f: -4.226596e+01   |grad|: 6.012321e+00   negative curvature
+acc TR+   k:   338     num_inner:     1     f: -4.232175e+01   |grad|: 9.120713e+00   negative curvature
+REJ TR-   k:   339     num_inner:     1     f: -4.232175e+01   |grad|: 9.120713e+00   negative curvature
+acc TR+   k:   340     num_inner:     0     f: -4.236810e+01   |grad|: 7.696163e+00   exceeded trust region
+acc       k:   341     num_inner:     0     f: -4.242266e+01   |grad|: 6.148587e+00   negative curvature
+acc TR+   k:   342     num_inner:     2     f: -4.244564e+01   |grad|: 3.243192e+00   negative curvature
+acc TR+   k:   343     num_inner:     1     f: -4.247687e+01   |grad|: 4.874530e+00   exceeded trust region
+acc TR+   k:   344     num_inner:     1     f: -4.254180e+01   |grad|: 1.045394e+01   exceeded trust region
+REJ TR-   k:   345     num_inner:     3     f: -4.254180e+01   |grad|: 1.045394e+01   negative curvature
+acc       k:   346     num_inner:     2     f: -4.259706e+01   |grad|: 9.765250e+00   exceeded trust region
+REJ TR-   k:   347     num_inner:     1     f: -4.259706e+01   |grad|: 9.765250e+00   exceeded trust region
+acc TR+   k:   348     num_inner:     0     f: -4.264679e+01   |grad|: 5.186918e+00   exceeded trust region
+acc TR+   k:   349     num_inner:     1     f: -4.269671e+01   |grad|: 7.491142e+00   negative curvature
+acc       k:   350     num_inner:     1     f: -4.277232e+01   |grad|: 9.577973e+00   negative curvature
+REJ TR-   k:   351     num_inner:     1     f: -4.277232e+01   |grad|: 9.577973e+00   negative curvature
+acc TR+   k:   352     num_inner:     0     f: -4.282284e+01   |grad|: 5.873974e+00   exceeded trust region
+acc       k:   353     num_inner:     2     f: -4.284061e+01   |grad|: 3.910950e+00   negative curvature
+acc TR+   k:   354     num_inner:     2     f: -4.285074e+01   |grad|: 4.517757e+00   negative curvature
+acc TR+   k:   355     num_inner:     2     f: -4.287844e+01   |grad|: 3.681997e+00   negative curvature
+acc TR+   k:   356     num_inner:     2     f: -4.292194e+01   |grad|: 8.999924e+00   negative curvature
+acc TR+   k:   357     num_inner:     3     f: -4.312178e+01   |grad|: 1.460097e+01   negative curvature
+REJ TR-   k:   358     num_inner:     1     f: -4.312178e+01   |grad|: 1.460097e+01   exceeded trust region
+REJ TR-   k:   359     num_inner:     1     f: -4.312178e+01   |grad|: 1.460097e+01   exceeded trust region
+acc TR+   k:   360     num_inner:     0     f: -4.323033e+01   |grad|: 9.469716e+00   exceeded trust region
+REJ TR-   k:   361     num_inner:     2     f: -4.323033e+01   |grad|: 9.469716e+00   reached target residual-kappa (linear)
+acc TR+   k:   362     num_inner:     0     f: -4.326435e+01   |grad|: 2.316103e+00   exceeded trust region
+acc TR+   k:   363     num_inner:     1     f: -4.327257e+01   |grad|: 7.838786e-01   exceeded trust region
+acc TR+   k:   364     num_inner:     1     f: -4.328696e+01   |grad|: 7.059189e-01   negative curvature
+acc TR+   k:   365     num_inner:     1     f: -4.331745e+01   |grad|: 8.853043e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   366     num_inner:     1     f: -4.338967e+01   |grad|: 9.976451e-01   negative curvature
+acc TR+   k:   367     num_inner:     1     f: -4.382141e+01   |grad|: 5.142856e+00   negative curvature
+acc TR+   k:   368     num_inner:     2     f: -4.404928e+01   |grad|: 6.671858e+00   negative curvature
+acc       k:   369     num_inner:     3     f: -4.446530e+01   |grad|: 2.286893e+01   negative curvature
+REJ TR-   k:   370     num_inner:     1     f: -4.446530e+01   |grad|: 2.286893e+01   negative curvature
+REJ TR-   k:   371     num_inner:     1     f: -4.446530e+01   |grad|: 2.286893e+01   negative curvature
+REJ TR-   k:   372     num_inner:     1     f: -4.446530e+01   |grad|: 2.286893e+01   negative curvature
+acc TR+   k:   373     num_inner:     0     f: -4.469819e+01   |grad|: 1.518313e+01   exceeded trust region
+acc TR-   k:   374     num_inner:     0     f: -4.474271e+01   |grad|: 1.628787e+01   exceeded trust region
+acc TR+   k:   375     num_inner:     0     f: -4.483330e+01   |grad|: 9.612767e+00   exceeded trust region
+acc       k:   376     num_inner:     3     f: -4.486170e+01   |grad|: 5.908390e+00   exceeded trust region
+acc       k:   377     num_inner:     2     f: -4.488161e+01   |grad|: 3.838649e+00   negative curvature
+acc TR+   k:   378     num_inner:     1     f: -4.489506e+01   |grad|: 4.001980e+00   exceeded trust region
+acc TR+   k:   379     num_inner:     1     f: -4.492602e+01   |grad|: 3.034234e+00   exceeded trust region
+acc TR+   k:   380     num_inner:     1     f: -4.498902e+01   |grad|: 3.938959e+00   negative curvature
+acc TR+   k:   381     num_inner:     2     f: -4.513870e+01   |grad|: 9.599833e+00   negative curvature
+acc       k:   382     num_inner:     2     f: -4.536844e+01   |grad|: 1.050231e+01   negative curvature
+REJ TR-   k:   383     num_inner:     3     f: -4.536844e+01   |grad|: 1.050231e+01   negative curvature
+acc       k:   384     num_inner:     2     f: -4.543540e+01   |grad|: 1.441493e+01   exceeded trust region
+acc       k:   385     num_inner:     1     f: -4.565542e+01   |grad|: 1.757323e+01   negative curvature
+REJ TR-   k:   386     num_inner:     1     f: -4.565542e+01   |grad|: 1.757323e+01   negative curvature
+acc TR+   k:   387     num_inner:     0     f: -4.581023e+01   |grad|: 1.103593e+01   exceeded trust region
+REJ TR-   k:   388     num_inner:     1     f: -4.581023e+01   |grad|: 1.103593e+01   negative curvature
+acc TR+   k:   389     num_inner:     0     f: -4.587172e+01   |grad|: 8.140185e+00   exceeded trust region
+acc       k:   390     num_inner:     0     f: -4.593000e+01   |grad|: 6.557490e+00   exceeded trust region
+acc       k:   391     num_inner:     1     f: -4.595259e+01   |grad|: 7.513662e+00   exceeded trust region
+acc       k:   392     num_inner:     2     f: -4.597770e+01   |grad|: 7.814469e+00   negative curvature
+acc TR-   k:   393     num_inner:     1     f: -4.598593e+01   |grad|: 8.725396e+00   exceeded trust region
+acc TR+   k:   394     num_inner:     0     f: -4.601329e+01   |grad|: 7.072580e+00   exceeded trust region
+acc       k:   395     num_inner:     0     f: -4.603756e+01   |grad|: 5.410812e+00   exceeded trust region
+acc TR+   k:   396     num_inner:     0     f: -4.606030e+01   |grad|: 6.504120e+00   exceeded trust region
+acc TR+   k:   397     num_inner:     1     f: -4.610405e+01   |grad|: 1.049346e+01   negative curvature
+REJ TR-   k:   398     num_inner:     0     f: -4.610405e+01   |grad|: 1.049346e+01   exceeded trust region
+acc TR+   k:   399     num_inner:     0     f: -4.616627e+01   |grad|: 7.794900e+00   exceeded trust region
+REJ TR-   k:   400     num_inner:     0     f: -4.616627e+01   |grad|: 7.794900e+00   exceeded trust region
+acc TR+   k:   401     num_inner:     0     f: -4.618935e+01   |grad|: 5.277802e+00   exceeded trust region
+acc       k:   402     num_inner:     2     f: -4.619921e+01   |grad|: 2.659863e+00   negative curvature
+acc TR+   k:   403     num_inner:     1     f: -4.620392e+01   |grad|: 1.537863e+00   exceeded trust region
+acc TR+   k:   404     num_inner:     1     f: -4.621157e+01   |grad|: 6.693074e-01   negative curvature
+acc TR+   k:   405     num_inner:     1     f: -4.622625e+01   |grad|: 8.922235e-01   negative curvature
+acc TR+   k:   406     num_inner:     1     f: -4.625826e+01   |grad|: 8.194773e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   407     num_inner:     1     f: -4.633726e+01   |grad|: 1.260228e+00   negative curvature
+acc       k:   408     num_inner:     1     f: -4.655324e+01   |grad|: 3.643893e+00   negative curvature
+REJ TR-   k:   409     num_inner:     1     f: -4.655324e+01   |grad|: 3.643893e+00   negative curvature
+acc TR-   k:   410     num_inner:     1     f: -4.661173e+01   |grad|: 1.012241e+01   negative curvature
+acc       k:   411     num_inner:     0     f: -4.669815e+01   |grad|: 9.871549e+00   exceeded trust region
+acc       k:   412     num_inner:     0     f: -4.672188e+01   |grad|: 9.635315e+00   exceeded trust region
+acc       k:   413     num_inner:     1     f: -4.674658e+01   |grad|: 4.132737e+00   reached target residual-kappa (linear)
+acc TR+   k:   414     num_inner:     2     f: -4.675699e+01   |grad|: 1.242218e+00   negative curvature
+acc TR+   k:   415     num_inner:     1     f: -4.676953e+01   |grad|: 6.751725e-01   negative curvature
+acc TR+   k:   416     num_inner:     1     f: -4.679512e+01   |grad|: 6.537087e-01   negative curvature
+acc TR+   k:   417     num_inner:     1     f: -4.685139e+01   |grad|: 8.000142e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   418     num_inner:     1     f: -4.699808e+01   |grad|: 1.331330e+00   negative curvature
+acc TR-   k:   419     num_inner:     1     f: -4.713734e+01   |grad|: 4.682793e+00   negative curvature
+acc TR+   k:   420     num_inner:     2     f: -4.726970e+01   |grad|: 5.095870e+00   negative curvature
+acc       k:   421     num_inner:     2     f: -4.757002e+01   |grad|: 1.034862e+01   negative curvature
+REJ TR-   k:   422     num_inner:     2     f: -4.757002e+01   |grad|: 1.034862e+01   negative curvature
+acc       k:   423     num_inner:     2     f: -4.777035e+01   |grad|: 1.093276e+01   negative curvature
+REJ TR-   k:   424     num_inner:     1     f: -4.777035e+01   |grad|: 1.093276e+01   negative curvature
+acc TR+   k:   425     num_inner:     0     f: -4.785394e+01   |grad|: 1.243931e+01   exceeded trust region
+REJ TR-   k:   426     num_inner:     1     f: -4.785394e+01   |grad|: 1.243931e+01   negative curvature
+acc TR+   k:   427     num_inner:     0     f: -4.792266e+01   |grad|: 8.693351e+00   exceeded trust region
+acc       k:   428     num_inner:     0     f: -4.798126e+01   |grad|: 1.054930e+01   exceeded trust region
+acc       k:   429     num_inner:     0     f: -4.801845e+01   |grad|: 8.039494e+00   exceeded trust region
+acc       k:   430     num_inner:     2     f: -4.803787e+01   |grad|: 6.070374e+00   exceeded trust region
+acc       k:   431     num_inner:     2     f: -4.805818e+01   |grad|: 3.820322e+00   negative curvature
+acc TR+   k:   432     num_inner:     1     f: -4.807350e+01   |grad|: 3.389890e+00   exceeded trust region
+acc TR+   k:   433     num_inner:     1     f: -4.810447e+01   |grad|: 4.843911e+00   exceeded trust region
+acc TR+   k:   434     num_inner:     1     f: -4.820290e+01   |grad|: 8.703017e+00   exceeded trust region
+REJ TR-   k:   435     num_inner:     2     f: -4.820290e+01   |grad|: 8.703017e+00   negative curvature
+acc TR+   k:   436     num_inner:     2     f: -4.827136e+01   |grad|: 1.322074e+01   negative curvature
+REJ TR-   k:   437     num_inner:     1     f: -4.827136e+01   |grad|: 1.322074e+01   negative curvature
+acc TR+   k:   438     num_inner:     0     f: -4.837884e+01   |grad|: 1.003999e+01   exceeded trust region
+REJ TR-   k:   439     num_inner:     1     f: -4.837884e+01   |grad|: 1.003999e+01   reached target residual-kappa (linear)
+acc TR+   k:   440     num_inner:     0     f: -4.841343e+01   |grad|: 2.005559e+00   exceeded trust region
+acc TR+   k:   441     num_inner:     1     f: -4.841894e+01   |grad|: 5.504284e-01   exceeded trust region
+acc TR+   k:   442     num_inner:     1     f: -4.842816e+01   |grad|: 4.227553e-01   negative curvature
+acc TR+   k:   443     num_inner:     1     f: -4.844700e+01   |grad|: 5.873197e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   444     num_inner:     1     f: -4.848715e+01   |grad|: 4.900655e-01   negative curvature
+acc TR+   k:   445     num_inner:     1     f: -4.857924e+01   |grad|: 8.234716e-01   negative curvature
+acc TR+   k:   446     num_inner:     1     f: -4.885434e+01   |grad|: 2.093117e+00   negative curvature
+REJ TR-   k:   447     num_inner:     1     f: -4.885434e+01   |grad|: 2.093117e+00   negative curvature
+acc TR+   k:   448     num_inner:     1     f: -4.932345e+01   |grad|: 5.822117e+00   negative curvature
+acc TR-   k:   449     num_inner:     2     f: -4.945863e+01   |grad|: 8.335482e+00   negative curvature
+acc TR+   k:   450     num_inner:     2     f: -4.963393e+01   |grad|: 8.709673e+00   negative curvature
+REJ TR-   k:   451     num_inner:     2     f: -4.963393e+01   |grad|: 8.709673e+00   negative curvature
+acc TR+   k:   452     num_inner:     2     f: -4.982614e+01   |grad|: 1.025430e+01   negative curvature
+REJ TR-   k:   453     num_inner:     1     f: -4.982614e+01   |grad|: 1.025430e+01   negative curvature
+REJ TR-   k:   454     num_inner:     1     f: -4.982614e+01   |grad|: 1.025430e+01   negative curvature
+acc TR+   k:   455     num_inner:     0     f: -4.988142e+01   |grad|: 7.534569e+00   exceeded trust region
+REJ TR-   k:   456     num_inner:     0     f: -4.988142e+01   |grad|: 7.534569e+00   exceeded trust region
+acc TR+   k:   457     num_inner:     0     f: -4.990386e+01   |grad|: 5.027255e+00   exceeded trust region
+acc TR+   k:   458     num_inner:     1     f: -4.991699e+01   |grad|: 2.416943e+00   negative curvature
+acc TR+   k:   459     num_inner:     1     f: -4.993573e+01   |grad|: 1.703506e+00   negative curvature
+acc TR+   k:   460     num_inner:     1     f: -4.997848e+01   |grad|: 3.093569e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   461     num_inner:     1     f: -5.016769e+01   |grad|: 7.663936e+00   negative curvature
+REJ TR-   k:   462     num_inner:     1     f: -5.016769e+01   |grad|: 7.663936e+00   negative curvature
+REJ TR-   k:   463     num_inner:     0     f: -5.016769e+01   |grad|: 7.663936e+00   exceeded trust region
+acc TR+   k:   464     num_inner:     0     f: -5.021601e+01   |grad|: 7.718632e+00   exceeded trust region
+REJ TR-   k:   465     num_inner:     0     f: -5.021601e+01   |grad|: 7.718632e+00   exceeded trust region
+acc TR+   k:   466     num_inner:     0     f: -5.023879e+01   |grad|: 5.149360e+00   exceeded trust region
+acc       k:   467     num_inner:     2     f: -5.024814e+01   |grad|: 2.311651e+00   negative curvature
+acc TR+   k:   468     num_inner:     1     f: -5.025184e+01   |grad|: 1.303610e+00   exceeded trust region
+acc TR+   k:   469     num_inner:     1     f: -5.025782e+01   |grad|: 5.518806e-01   negative curvature
+acc TR+   k:   470     num_inner:     1     f: -5.026935e+01   |grad|: 6.497736e-01   negative curvature
+acc TR+   k:   471     num_inner:     1     f: -5.029399e+01   |grad|: 6.251317e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   472     num_inner:     1     f: -5.035125e+01   |grad|: 9.026296e-01   negative curvature
+acc TR+   k:   473     num_inner:     1     f: -5.055642e+01   |grad|: 2.088862e+00   negative curvature
+REJ TR-   k:   474     num_inner:     1     f: -5.055642e+01   |grad|: 2.088862e+00   negative curvature
+acc TR-   k:   475     num_inner:     1     f: -5.060482e+01   |grad|: 8.580801e+00   negative curvature
+acc       k:   476     num_inner:     2     f: -5.067962e+01   |grad|: 1.006819e+01   negative curvature
+acc TR-   k:   477     num_inner:     0     f: -5.073367e+01   |grad|: 1.169300e+01   negative curvature
+acc TR+   k:   478     num_inner:     0     f: -5.079000e+01   |grad|: 7.678073e+00   exceeded trust region
+acc TR-   k:   479     num_inner:     0     f: -5.080530e+01   |grad|: 7.351951e+00   exceeded trust region
+acc TR+   k:   480     num_inner:     0     f: -5.082607e+01   |grad|: 4.217467e+00   exceeded trust region
+acc TR+   k:   481     num_inner:     1     f: -5.083324e+01   |grad|: 1.647917e+00   exceeded trust region
+acc TR+   k:   482     num_inner:     1     f: -5.083951e+01   |grad|: 6.984437e-01   exceeded trust region
+acc TR+   k:   483     num_inner:     1     f: -5.085133e+01   |grad|: 5.561450e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   484     num_inner:     1     f: -5.087661e+01   |grad|: 7.902710e-01   negative curvature
+acc TR+   k:   485     num_inner:     1     f: -5.093698e+01   |grad|: 8.416426e-01   negative curvature
+acc TR+   k:   486     num_inner:     1     f: -5.116505e+01   |grad|: 2.523285e+00   negative curvature
+REJ TR-   k:   487     num_inner:     1     f: -5.116505e+01   |grad|: 2.523285e+00   negative curvature
+REJ TR-   k:   488     num_inner:     1     f: -5.116505e+01   |grad|: 2.523285e+00   negative curvature
+acc TR+   k:   489     num_inner:     1     f: -5.123527e+01   |grad|: 6.389709e+00   negative curvature
+REJ TR-   k:   490     num_inner:     1     f: -5.123527e+01   |grad|: 6.389709e+00   negative curvature
+acc TR+   k:   491     num_inner:     1     f: -5.128324e+01   |grad|: 8.350415e+00   negative curvature
+acc       k:   492     num_inner:     1     f: -5.132965e+01   |grad|: 7.999221e+00   negative curvature
+REJ TR-   k:   493     num_inner:     0     f: -5.132965e+01   |grad|: 7.999221e+00   exceeded trust region
+acc TR+   k:   494     num_inner:     0     f: -5.137720e+01   |grad|: 7.900875e+00   exceeded trust region
+REJ TR-   k:   495     num_inner:     0     f: -5.137720e+01   |grad|: 7.900875e+00   exceeded trust region
+acc TR+   k:   496     num_inner:     0     f: -5.140162e+01   |grad|: 6.015471e+00   exceeded trust region
+acc       k:   497     num_inner:     2     f: -5.141045e+01   |grad|: 4.314140e+00   negative curvature
+acc TR+   k:   498     num_inner:     2     f: -5.141828e+01   |grad|: 2.005043e+00   negative curvature
+acc TR+   k:   499     num_inner:     1     f: -5.142694e+01   |grad|: 6.619374e-01   negative curvature
+acc TR+   k:   500     num_inner:     1     f: -5.144339e+01   |grad|: 1.309154e+00   negative curvature
+acc TR+   k:   501     num_inner:     1     f: -5.148456e+01   |grad|: 1.353696e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   502     num_inner:     1     f: -5.165430e+01   |grad|: 3.589418e+00   negative curvature
+REJ TR-   k:   503     num_inner:     1     f: -5.165430e+01   |grad|: 3.589418e+00   negative curvature
+acc TR-   k:   504     num_inner:     1     f: -5.170367e+01   |grad|: 9.914908e+00   negative curvature
+acc       k:   505     num_inner:     0     f: -5.179587e+01   |grad|: 9.326879e+00   negative curvature
+acc       k:   506     num_inner:     0     f: -5.182125e+01   |grad|: 9.202726e+00   exceeded trust region
+acc       k:   507     num_inner:     1     f: -5.184288e+01   |grad|: 4.520961e+00   reached target residual-kappa (linear)
+acc       k:   508     num_inner:     1     f: -5.184874e+01   |grad|: 8.203272e-01   reached target residual-kappa (linear)
+acc TR+   k:   509     num_inner:     1     f: -5.185163e+01   |grad|: 2.073731e-01   negative curvature
+acc TR+   k:   510     num_inner:     1     f: -5.185701e+01   |grad|: 7.223367e-01   negative curvature
+acc TR+   k:   511     num_inner:     1     f: -5.186833e+01   |grad|: 5.513888e-01   negative curvature
+acc TR+   k:   512     num_inner:     1     f: -5.189210e+01   |grad|: 4.520195e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   513     num_inner:     1     f: -5.194616e+01   |grad|: 1.205564e+00   negative curvature
+acc TR+   k:   514     num_inner:     1     f: -5.210462e+01   |grad|: 4.563160e+00   negative curvature
+REJ TR-   k:   515     num_inner:     2     f: -5.210462e+01   |grad|: 4.563160e+00   negative curvature
+acc TR+   k:   516     num_inner:     2     f: -5.222925e+01   |grad|: 1.682379e+01   negative curvature
+REJ TR-   k:   517     num_inner:     3     f: -5.222925e+01   |grad|: 1.682379e+01   negative curvature
+REJ TR-   k:   518     num_inner:     3     f: -5.222925e+01   |grad|: 1.682379e+01   negative curvature
+acc TR+   k:   519     num_inner:     2     f: -5.234012e+01   |grad|: 8.650371e+00   exceeded trust region
+acc TR-   k:   520     num_inner:     2     f: -5.240568e+01   |grad|: 9.092877e+00   negative curvature
+acc       k:   521     num_inner:     0     f: -5.245526e+01   |grad|: 9.851143e+00   exceeded trust region
+acc       k:   522     num_inner:     0     f: -5.251520e+01   |grad|: 1.137252e+01   exceeded trust region
+acc       k:   523     num_inner:     0     f: -5.254712e+01   |grad|: 9.357403e+00   exceeded trust region
+acc       k:   524     num_inner:     1     f: -5.257179e+01   |grad|: 2.625487e+00   reached target residual-kappa (linear)
+acc TR+   k:   525     num_inner:     2     f: -5.257744e+01   |grad|: 1.857239e+00   negative curvature
+acc TR+   k:   526     num_inner:     1     f: -5.258732e+01   |grad|: 1.785903e+00   exceeded trust region
+acc TR+   k:   527     num_inner:     1     f: -5.260601e+01   |grad|: 3.604650e+00   exceeded trust region
+acc TR+   k:   528     num_inner:     2     f: -5.266138e+01   |grad|: 2.045324e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   529     num_inner:     1     f: -5.288329e+01   |grad|: 1.390154e+01   exceeded trust region
+REJ TR-   k:   530     num_inner:     2     f: -5.288329e+01   |grad|: 1.390154e+01   negative curvature
+REJ TR-   k:   531     num_inner:     2     f: -5.288329e+01   |grad|: 1.390154e+01   negative curvature
+acc TR-   k:   532     num_inner:     1     f: -5.291749e+01   |grad|: 1.578887e+01   exceeded trust region
+acc TR+   k:   533     num_inner:     0     f: -5.301261e+01   |grad|: 1.200715e+01   exceeded trust region
+acc       k:   534     num_inner:     0     f: -5.307913e+01   |grad|: 7.205328e+00   exceeded trust region
+acc       k:   535     num_inner:     1     f: -5.309402e+01   |grad|: 1.191197e+00   reached target residual-kappa (linear)
+acc TR+   k:   536     num_inner:     1     f: -5.309749e+01   |grad|: 5.981734e-01   exceeded trust region
+acc TR+   k:   537     num_inner:     1     f: -5.310406e+01   |grad|: 2.689027e-01   negative curvature
+acc TR+   k:   538     num_inner:     1     f: -5.311752e+01   |grad|: 5.573222e-01   negative curvature
+acc TR+   k:   539     num_inner:     1     f: -5.314725e+01   |grad|: 5.434544e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   540     num_inner:     1     f: -5.322351e+01   |grad|: 8.448642e-01   negative curvature
+acc       k:   541     num_inner:     1     f: -5.343885e+01   |grad|: 2.483645e+00   negative curvature
+REJ TR-   k:   542     num_inner:     1     f: -5.343885e+01   |grad|: 2.483645e+00   negative curvature
+acc       k:   543     num_inner:     1     f: -5.354252e+01   |grad|: 5.148603e+00   negative curvature
+REJ TR-   k:   544     num_inner:     1     f: -5.354252e+01   |grad|: 5.148603e+00   negative curvature
+acc TR+   k:   545     num_inner:     1     f: -5.368425e+01   |grad|: 9.549539e+00   negative curvature
+REJ TR-   k:   546     num_inner:     2     f: -5.368425e+01   |grad|: 9.549539e+00   reached target residual-kappa (linear)
+REJ TR-   k:   547     num_inner:     1     f: -5.368425e+01   |grad|: 9.549539e+00   exceeded trust region
+acc TR+   k:   548     num_inner:     0     f: -5.371159e+01   |grad|: 6.096363e+00   exceeded trust region
+acc       k:   549     num_inner:     1     f: -5.372209e+01   |grad|: 2.277355e+00   reached target residual-kappa (linear)
+acc TR+   k:   550     num_inner:     1     f: -5.372499e+01   |grad|: 9.149370e-01   exceeded trust region
+acc TR+   k:   551     num_inner:     1     f: -5.372867e+01   |grad|: 3.675957e-01   negative curvature
+acc TR+   k:   552     num_inner:     1     f: -5.373587e+01   |grad|: 3.708873e-01   negative curvature
+acc TR+   k:   553     num_inner:     1     f: -5.375113e+01   |grad|: 4.308205e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   554     num_inner:     1     f: -5.378625e+01   |grad|: 4.632001e-01   negative curvature
+acc TR+   k:   555     num_inner:     1     f: -5.389275e+01   |grad|: 1.013138e+00   negative curvature
+REJ TR-   k:   556     num_inner:     1     f: -5.389275e+01   |grad|: 1.013138e+00   negative curvature
+acc TR+   k:   557     num_inner:     1     f: -5.401045e+01   |grad|: 2.095106e+00   negative curvature
+REJ TR-   k:   558     num_inner:     1     f: -5.401045e+01   |grad|: 2.095106e+00   negative curvature
+acc TR+   k:   559     num_inner:     1     f: -5.417618e+01   |grad|: 7.529482e+00   negative curvature
+REJ TR-   k:   560     num_inner:     1     f: -5.417618e+01   |grad|: 7.529482e+00   negative curvature
+REJ TR-   k:   561     num_inner:     1     f: -5.417618e+01   |grad|: 7.529482e+00   negative curvature
+acc TR+   k:   562     num_inner:     0     f: -5.421733e+01   |grad|: 7.874974e+00   exceeded trust region
+acc       k:   563     num_inner:     0     f: -5.426899e+01   |grad|: 6.751173e+00   exceeded trust region
+acc       k:   564     num_inner:     1     f: -5.428202e+01   |grad|: 1.657908e+00   reached target residual-kappa (linear)
+acc TR+   k:   565     num_inner:     1     f: -5.428430e+01   |grad|: 1.965940e+00   exceeded trust region
+acc TR+   k:   566     num_inner:     2     f: -5.429005e+01   |grad|: 1.460693e+00   negative curvature
+acc TR+   k:   567     num_inner:     2     f: -5.429711e+01   |grad|: 4.013531e+00   negative curvature
+acc TR+   k:   568     num_inner:     2     f: -5.432389e+01   |grad|: 1.837154e+00   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   569     num_inner:     2     f: -5.437304e+01   |grad|: 5.069720e+00   negative curvature
+acc TR+   k:   570     num_inner:     2     f: -5.454922e+01   |grad|: 6.633775e+00   negative curvature
+REJ TR-   k:   571     num_inner:     2     f: -5.454922e+01   |grad|: 6.633775e+00   negative curvature
+acc TR+   k:   572     num_inner:     2     f: -5.476031e+01   |grad|: 1.116041e+01   negative curvature
+REJ TR-   k:   573     num_inner:     3     f: -5.476031e+01   |grad|: 1.116041e+01   negative curvature
+REJ TR-   k:   574     num_inner:     3     f: -5.476031e+01   |grad|: 1.116041e+01   negative curvature
+acc       k:   575     num_inner:     2     f: -5.482077e+01   |grad|: 9.682916e+00   exceeded trust region
+REJ TR-   k:   576     num_inner:     0     f: -5.482077e+01   |grad|: 9.682916e+00   exceeded trust region
+acc TR+   k:   577     num_inner:     0     f: -5.487528e+01   |grad|: 6.778624e+00   exceeded trust region
+acc TR+   k:   578     num_inner:     1     f: -5.492274e+01   |grad|: 9.176138e+00   negative curvature
+REJ TR-   k:   579     num_inner:     0     f: -5.492274e+01   |grad|: 9.176138e+00   exceeded trust region
+acc TR+   k:   580     num_inner:     0     f: -5.497259e+01   |grad|: 7.272804e+00   exceeded trust region
+acc       k:   581     num_inner:     0     f: -5.503718e+01   |grad|: 4.045606e+00   negative curvature
+acc TR+   k:   582     num_inner:     2     f: -5.504947e+01   |grad|: 2.006178e+00   negative curvature
+acc TR+   k:   583     num_inner:     1     f: -5.506970e+01   |grad|: 1.375476e+00   negative curvature
+acc TR+   k:   584     num_inner:     1     f: -5.512136e+01   |grad|: 1.527214e+00   negative curvature
+acc TR+   k:   585     num_inner:     1     f: -5.544045e+01   |grad|: 4.087162e+00   negative curvature
+acc       k:   586     num_inner:     1     f: -5.544516e+01   |grad|: 5.336127e-01   reached target residual-kappa (linear)
+acc TR+   k:   587     num_inner:     1     f: -5.547376e+01   |grad|: 2.397047e+00   exceeded trust region
+acc TR+   k:   588     num_inner:     2     f: -5.553969e+01   |grad|: 6.198340e+00   negative curvature
+acc       k:   589     num_inner:     1     f: -5.555032e+01   |grad|: 5.746416e-01   reached target residual-kappa (linear)
+acc       k:   590     num_inner:     1     f: -5.577272e+01   |grad|: 8.528037e+00   negative curvature
+REJ TR-   k:   591     num_inner:     3     f: -5.577272e+01   |grad|: 8.528037e+00   negative curvature
+REJ TR-   k:   592     num_inner:     3     f: -5.577272e+01   |grad|: 8.528037e+00   negative curvature
+acc TR+   k:   593     num_inner:     2     f: -5.583340e+01   |grad|: 9.619598e+00   exceeded trust region
+acc TR-   k:   594     num_inner:     2     f: -5.587756e+01   |grad|: 1.294333e+01   negative curvature
+REJ TR-   k:   595     num_inner:     1     f: -5.587756e+01   |grad|: 1.294333e+01   exceeded trust region
+acc TR+   k:   596     num_inner:     0     f: -5.594803e+01   |grad|: 8.141071e+00   exceeded trust region
+acc       k:   597     num_inner:     1     f: -5.597767e+01   |grad|: 8.938723e+00   exceeded trust region
+acc       k:   598     num_inner:     0     f: -5.601785e+01   |grad|: 1.016226e+01   exceeded trust region
+acc       k:   599     num_inner:     0     f: -5.608241e+01   |grad|: 1.099273e+01   exceeded trust region
+acc       k:   600     num_inner:     0     f: -5.611761e+01   |grad|: 8.545418e+00   exceeded trust region
+acc       k:   601     num_inner:     1     f: -5.613778e+01   |grad|: 3.774092e+00   reached target residual-kappa (linear)
+acc TR+   k:   602     num_inner:     2     f: -5.614433e+01   |grad|: 7.603405e-01   exceeded trust region
+acc TR+   k:   603     num_inner:     1     f: -5.615011e+01   |grad|: 3.644489e-01   negative curvature
+acc TR+   k:   604     num_inner:     1     f: -5.616215e+01   |grad|: 2.852504e-01   negative curvature
+acc TR+   k:   605     num_inner:     1     f: -5.618952e+01   |grad|: 4.334416e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   606     num_inner:     1     f: -5.626593e+01   |grad|: 6.973084e-01   negative curvature
+acc       k:   607     num_inner:     1     f: -5.638995e+01   |grad|: 1.542596e+00   negative curvature
+REJ TR-   k:   608     num_inner:     1     f: -5.638995e+01   |grad|: 1.542596e+00   negative curvature
+acc TR+   k:   609     num_inner:     1     f: -5.661652e+01   |grad|: 5.747191e+00   negative curvature
+REJ TR-   k:   610     num_inner:     1     f: -5.661652e+01   |grad|: 5.747191e+00   negative curvature
+REJ TR-   k:   611     num_inner:     0     f: -5.661652e+01   |grad|: 5.747191e+00   exceeded trust region
+acc TR+   k:   612     num_inner:     0     f: -5.669337e+01   |grad|: 9.541663e+00   exceeded trust region
+REJ TR-   k:   613     num_inner:     1     f: -5.669337e+01   |grad|: 9.541663e+00   exceeded trust region
+acc TR+   k:   614     num_inner:     0     f: -5.673567e+01   |grad|: 2.873333e+00   exceeded trust region
+acc TR+   k:   615     num_inner:     2     f: -5.674080e+01   |grad|: 6.469228e-01   negative curvature
+acc TR+   k:   616     num_inner:     1     f: -5.674705e+01   |grad|: 2.686562e-01   negative curvature
+acc TR+   k:   617     num_inner:     1     f: -5.676026e+01   |grad|: 4.795227e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   618     num_inner:     1     f: -5.679166e+01   |grad|: 4.278513e-01   negative curvature
+acc TR+   k:   619     num_inner:     1     f: -5.689328e+01   |grad|: 9.533270e-01   negative curvature
+REJ TR-   k:   620     num_inner:     1     f: -5.689328e+01   |grad|: 9.533270e-01   negative curvature
+acc TR+   k:   621     num_inner:     1     f: -5.701258e+01   |grad|: 2.224392e+00   negative curvature
+REJ TR-   k:   622     num_inner:     1     f: -5.701258e+01   |grad|: 2.224392e+00   negative curvature
+acc TR+   k:   623     num_inner:     1     f: -5.719256e+01   |grad|: 8.053375e+00   negative curvature
+REJ TR-   k:   624     num_inner:     1     f: -5.719256e+01   |grad|: 8.053375e+00   negative curvature
+REJ TR-   k:   625     num_inner:     0     f: -5.719256e+01   |grad|: 8.053375e+00   exceeded trust region
+acc TR+   k:   626     num_inner:     0     f: -5.723972e+01   |grad|: 7.916694e+00   exceeded trust region
+REJ TR-   k:   627     num_inner:     0     f: -5.723972e+01   |grad|: 7.916694e+00   exceeded trust region
+acc TR+   k:   628     num_inner:     0     f: -5.726449e+01   |grad|: 6.231067e+00   exceeded trust region
+acc       k:   629     num_inner:     0     f: -5.727279e+01   |grad|: 4.529663e+00   exceeded trust region
+acc       k:   630     num_inner:     1     f: -5.727878e+01   |grad|: 1.199377e+00   reached target residual-kappa (linear)
+acc TR+   k:   631     num_inner:     1     f: -5.728000e+01   |grad|: 2.115826e-01   exceeded trust region
+acc TR+   k:   632     num_inner:     1     f: -5.728173e+01   |grad|: 1.565339e-01   negative curvature
+acc TR+   k:   633     num_inner:     1     f: -5.728525e+01   |grad|: 2.244753e-01   negative curvature
+acc TR+   k:   634     num_inner:     1     f: -5.729267e+01   |grad|: 1.887565e-01   negative curvature
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   635     num_inner:     1     f: -5.730950e+01   |grad|: 2.854925e-01   negative curvature
+acc TR+   k:   636     num_inner:     1     f: -5.735686e+01   |grad|: 6.455759e-01   negative curvature
+acc TR+   k:   637     num_inner:     1     f: -5.770873e+01   |grad|: 5.613854e+00   negative curvature
+REJ TR-   k:   638     num_inner:     1     f: -5.770873e+01   |grad|: 5.613854e+00   negative curvature
+REJ TR-   k:   639     num_inner:     1     f: -5.770873e+01   |grad|: 5.613854e+00   negative curvature
+REJ TR-   k:   640     num_inner:     1     f: -5.770873e+01   |grad|: 5.613854e+00   negative curvature
+acc TR+   k:   641     num_inner:     0     f: -5.776694e+01   |grad|: 1.082687e+01   exceeded trust region
+REJ TR-   k:   642     num_inner:     1     f: -5.776694e+01   |grad|: 1.082687e+01   negative curvature
+acc TR+   k:   643     num_inner:     0     f: -5.782255e+01   |grad|: 6.820532e+00   exceeded trust region
+REJ TR-   k:   644     num_inner:     1     f: -5.782255e+01   |grad|: 6.820532e+00   reached target residual-kappa (linear)
+acc TR+   k:   645     num_inner:     0     f: -5.783996e+01   |grad|: 2.737956e+00   exceeded trust region
+acc TR+   k:   646     num_inner:     2     f: -5.784229e+01   |grad|: 3.470676e-01   exceeded trust region
+acc TR+   k:   647     num_inner:     1     f: -5.784282e+01   |grad|: 6.880600e-02   exceeded trust region
+acc TR+   k:   648     num_inner:     1     f: -5.784372e+01   |grad|: 7.926083e-02   exceeded trust region
+ +++ Detected many consecutive TR+ (radius increases).
+ +++ Consider increasing options.Delta_bar by an order of magnitude.
+ +++ Current values: Delta_bar = 28.0993 and Delta0 = 3.51241.
+acc TR+   k:   649     num_inner:     1     f: -5.784512e+01   |grad|: 3.084669e-01   exceeded trust region
+acc TR+   k:   650     num_inner:     1     f: -5.784675e+01   |grad|: 1.375190e+00   exceeded trust region
+acc       k:   651     num_inner:     1     f: -5.784726e+01   |grad|: 8.316102e-02   reached target residual-kappa (linear)
+REJ TR-   k:   652     num_inner:     1     f: -5.784726e+01   |grad|: 8.316102e-02   exceeded trust region
+acc TR+   k:   653     num_inner:     1     f: -5.784814e+01   |grad|: 3.038057e-01   exceeded trust region
+acc TR+   k:   654     num_inner:     1     f: -5.784931e+01   |grad|: 1.263728e+00   exceeded trust region
+acc       k:   655     num_inner:     1     f: -5.784974e+01   |grad|: 7.437057e-02   reached target residual-kappa (linear)
+REJ TR-   k:   656     num_inner:     1     f: -5.784974e+01   |grad|: 7.437057e-02   exceeded trust region
+acc TR+   k:   657     num_inner:     1     f: -5.785043e+01   |grad|: 2.796371e-01   exceeded trust region
+acc TR+   k:   658     num_inner:     1     f: -5.785125e+01   |grad|: 1.278005e+00   exceeded trust region
+acc       k:   659     num_inner:     1     f: -5.785169e+01   |grad|: 4.872784e-02   reached target residual-kappa (linear)
+REJ TR-   k:   660     num_inner:     1     f: -5.785169e+01   |grad|: 4.872784e-02   exceeded trust region
+acc TR+   k:   661     num_inner:     1     f: -5.785221e+01   |grad|: 2.285124e-01   exceeded trust region
+acc TR+   k:   662     num_inner:     1     f: -5.785280e+01   |grad|: 1.087100e+00   exceeded trust region
+acc       k:   663     num_inner:     1     f: -5.785312e+01   |grad|: 5.418632e-02   reached target residual-kappa (linear)
+REJ TR-   k:   664     num_inner:     3     f: -5.785312e+01   |grad|: 5.418632e-02   exceeded trust region
+acc TR+   k:   665     num_inner:     1     f: -5.785344e+01   |grad|: 1.245930e-01   exceeded trust region
+acc       k:   666     num_inner:     2     f: -5.785370e+01   |grad|: 1.905717e-01   reached target residual-kappa (linear)
+acc       k:   667     num_inner:     2     f: -5.785394e+01   |grad|: 7.800244e-02   reached target residual-kappa (linear)
+acc       k:   668     num_inner:     3     f: -5.785439e+01   |grad|: 7.550887e-01   exceeded trust region
+acc       k:   669     num_inner:     1     f: -5.785454e+01   |grad|: 6.343253e-02   reached target residual-kappa (linear)
+acc TR+   k:   670     num_inner:     3     f: -5.785496e+01   |grad|: 5.594045e-01   exceeded trust region
+acc       k:   671     num_inner:     2     f: -5.785512e+01   |grad|: 4.485510e-02   reached target residual-kappa (linear)
+REJ TR-   k:   672     num_inner:     3     f: -5.785512e+01   |grad|: 4.485510e-02   exceeded trust region
+acc TR+   k:   673     num_inner:     3     f: -5.785529e+01   |grad|: 1.397122e-01   exceeded trust region
+acc       k:   674     num_inner:     2     f: -5.785534e+01   |grad|: 2.401786e-02   reached target residual-kappa (linear)
+acc       k:   675     num_inner:     3     f: -5.785548e+01   |grad|: 5.639797e-01   exceeded trust region
+acc       k:   676     num_inner:     1     f: -5.785557e+01   |grad|: 1.829988e-02   reached target residual-kappa (linear)
+acc       k:   677     num_inner:     7     f: -5.785559e+01   |grad|: 3.137037e-01   reached target residual-theta (superlinear)
+acc       k:   678     num_inner:     1     f: -5.785562e+01   |grad|: 2.512798e-03   reached target residual-kappa (linear)
+acc       k:   679     num_inner:    10     f: -5.785562e+01   |grad|: 1.505509e-03   reached target residual-theta (superlinear)
+acc       k:   680     num_inner:     6     f: -5.785562e+01   |grad|: 1.014938e-06   reached target residual-theta (superlinear)
+REJ TR-   k:   681     num_inner:    41     f: -5.785562e+01   |grad|: 1.014938e-06   negative curvature
+REJ TR-   k:   682     num_inner:    41     f: -5.785562e+01   |grad|: 1.014938e-06   negative curvature
+REJ TR-   k:   683     num_inner:    41     f: -5.785562e+01   |grad|: 1.014938e-06   negative curvature
+acc TR+   k:   684     num_inner:    41     f: -5.785562e+01   |grad|: 7.833262e-05   negative curvature
+acc       k:   685     num_inner:     4     f: -5.785562e+01   |grad|: 3.787527e-09   reached target residual-theta (superlinear)
+Terminated - min grad norm reached after 685 iterations, 29.01 seconds.
+

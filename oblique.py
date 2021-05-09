@@ -2,6 +2,8 @@ import numpy
 import autograd.numpy as np
 import matplotlib.pyplot as plt
 import pymanopt
+import re
+
 from pymanopt.manifolds import Sphere, Oblique, Product, Euclidean
 from pymanopt.solvers import TrustRegions, SteepestDescent
 from pymanopt import Problem
@@ -68,7 +70,7 @@ def lr_cost_weights(X):
 
 def softmax_loss(softmax_features, labels):
     """
-    Stable multi-class CE loss.
+    Stable multi-class CE loss. No loops.
 
     Parameters
     ----------
@@ -94,7 +96,7 @@ def softmax_loss(softmax_features, labels):
 def make_lr_weight_decay(lam_W=0.3, lam_H=0.3, lam_b=0.3):
     def lr_weight_decay(X):
         """
-        Primary paper: objective with weight, feature and bias decay. No loops.
+        Primary paper: objective with weight, feature and bias decay.
 
         Parameters
         ----------
@@ -113,7 +115,7 @@ def make_lr_weight_decay(lam_W=0.3, lam_H=0.3, lam_b=0.3):
         # W, H, b = X[:, :num_cls], X[:, num_cls:-1], X[:, -1]
         W, H, b = X
         num_cls = b.shape[0]
-        assert H.shape[-1] % num_cls == 0, "number of samples must be multiple of number of classes"
+        assert H.shape[-1] % num_cls == 0, "number of samples must be a multiple of number of classes"
         assert W.shape[0] >= W.shape[-1], "number of features must be no less than number of training samples"
         N = H.shape[-1] // num_cls  # number of training samples per class
         cost = 0.5 * (lam_W * np.linalg.norm(W) ** 2 + lam_H * np.linalg.norm(H) ** 2 + lam_b * np.linalg.norm(b) ** 2)
@@ -126,6 +128,38 @@ def make_lr_weight_decay(lam_W=0.3, lam_H=0.3, lam_b=0.3):
         return cost
 
     return lr_weight_decay
+
+
+def make_mcr2_loss(num_cls, eps=1e-2):
+    def mcr2_loss(Z):
+        """
+        $MCR^2$ loss, assuming all classes have equal number of training samples.
+
+        Parameters
+        ----------
+        Z: numpy.ndarray
+            In the form of [z1, ..., zn], and samples are properly sorted: [Z1, ..., ZC] where C is number of classes.
+
+        Returns
+        -------
+        float
+        """
+        N, M = Z.shape
+        assert M % num_cls == 0, "number of training samples should be a multiple of number of classes"
+        M_per_cls = M // num_cls
+        alpha = N / (M * eps ** 2)
+        alpha_j = N / (M_per_cls * eps ** 2)
+        gamma_j = M_per_cls / M
+        outer = Z @ Z.T
+        cost = 0.5 * np.log(np.linalg.det(np.eye(N) + alpha * outer))
+
+        for i in range(0, M, M_per_cls):
+            Z_i = Z[:, i : i + M_per_cls]
+            cost -= 0.5 * gamma_j * np.log(np.linalg.det(np.eye(N) + alpha_j * Z_i @ Z_i.T))
+
+        return -cost
+
+    return mcr2_loss
 
 
 def check_etf(X, verbose=False, atol=1e-8):
@@ -172,3 +206,56 @@ def check_duality(W, H, verbose=False, atol=1e-4):
     assert numpy.allclose(H_from_W, H, atol=atol), "duality doesn't hold"
 
     print("All tests passed!")
+
+
+def convert_stdout_to_data(filename, mode="RGD"):
+    """
+    Pymanopt directly prints cost to console, but it's better to visualize the optimization process. This function
+    converts the log file to a numpy array. Only works for SteepestDescent solver.
+
+    Parameters
+    ----------
+    filename: str
+        Log file.
+    mode: str
+        "RGD" or "RTR"
+
+    Returns
+    -------
+    numpt.ndarray
+    """
+    data = []
+    if mode == "RGD":
+        with open(filename, "r") as rf:
+            for i in range(3):
+                rf.readline()
+
+            line = rf.readline().strip()
+            while len(line) > 0:
+                raw = line.split()[1:]
+                # print(raw)
+                try:
+                    data.append(list(map(float, raw)))
+                except ValueError:
+                    pass
+                line = rf.readline().strip()
+    elif mode == "RTR":
+        with open("loss_RTR.txt", "r") as rf:
+            for i in range(4):
+                rf.readline()
+
+            line = rf.readline().strip()
+            while len(line) > 0:
+                try:
+                    fval_raw = re.findall(r"f: [-+0-9e.]+", line)[0]
+                    # print(fval_raw)
+                    grad_raw = re.findall(r"\|grad\|: [-+0-9e.]+", line)[0]
+                    # print(grad_raw)
+                    data.append([float(fval_raw[len("f: "):]), float(grad_raw[len("|grad|: "):])])
+                except IndexError:
+                    pass
+                line = rf.readline().strip()
+
+    data = numpy.array(data)
+
+    return data
