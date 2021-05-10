@@ -7,6 +7,7 @@ import re
 from pymanopt.manifolds import Sphere, Oblique, Product, Euclidean
 from pymanopt.solvers import TrustRegions, SteepestDescent
 from pymanopt import Problem
+from contextlib import redirect_stdout
 
 
 def lr_cost(U, alpha=1):
@@ -240,7 +241,7 @@ def convert_stdout_to_data(filename, mode="RGD"):
                     pass
                 line = rf.readline().strip()
     elif mode == "RTR":
-        with open("loss_RTR.txt", "r") as rf:
+        with open(filename, "r") as rf:
             for i in range(4):
                 rf.readline()
 
@@ -259,3 +260,45 @@ def convert_stdout_to_data(filename, mode="RGD"):
     data = numpy.array(data)
 
     return data
+
+
+if __name__ == '__main__':
+    from mpl_toolkits.mplot3d import Axes3D
+    import matplotlib.pyplot
+
+    # MCR^2, interactive 3D plot
+    num_cls = 2  # 3 or 2
+    sample_per_cls = 10
+    N = sample_per_cls * num_cls
+    M = 3
+    solver = TrustRegions()
+    # solver = SteepestDescent()
+    manifold = Oblique(M, N)
+    prob = Problem(manifold=manifold, cost=make_mcr2_loss(num_cls))
+    with open("loss.txt", "w") as wf:
+        with redirect_stdout(wf):
+            Xopt = solver.solve(prob)
+
+    data = convert_stdout_to_data("loss.txt", "RTR")
+
+    fig, axes = plt.subplots(1, 2)
+    axes[0].plot(data[:, 0])
+    axes[0].set_title("fval")
+    axes[1].plot(data[:, 1])
+    axes[1].set_title("norm of grad")
+
+    # Xopt *= numpy.sign(Xopt[0, :])  # get rid of sign flip, but better not to do it to see obvious orthogonality
+    fig = plt.figure(figsize=(8, 8))
+    axis = fig.gca(projection="3d")
+    colors = ["r", "b", "g"]
+    for cls in range(num_cls):
+        label = cls + 1
+        start = cls * sample_per_cls
+        end = (cls + 1) * sample_per_cls
+        axis.scatter(*[Xopt[i, start: end] for i in range(Xopt.shape[0])], color=colors[cls], label=f"cls {label}")
+    axis.grid(True)
+    axis.set_xlim([-1, 1])
+    axis.set_ylim([-1, 1])
+    axis.set_zlim([-1, 1])
+    axis.legend()
+    plt.show()  # You should be able to see subspaces are orthogonal to each other
