@@ -305,7 +305,7 @@ if __name__ == '__main__':
 
     # ETF for K >> d, 3D
     M = 3
-    K = 7
+    K = 6
     samples_per_cls = 5
     solver = SteepestDescent()
     manifold = Product((Oblique(M, K), Oblique(M, samples_per_cls * K), Euclidean(K)))
