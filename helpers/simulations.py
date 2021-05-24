@@ -71,6 +71,7 @@ def simulate_etf_K_gt_M(K=6, samples_per_cls=5):
     axis.set_zlim([-1, 1])
     plt.show()
 
+
 def simulate_maxmin_angle(max_K, samples_per_cls=5, if_save=False, save_path=None):
     loss_CE_manifold = make_lr_weight_decay(0, 0, 0.01)
     doc = {"min": numpy.zeros((max_K, max_K)), "max": numpy.zeros((max_K, max_K))}
@@ -222,7 +223,7 @@ def plot_fix_K(K_list):
         plt.savefig(f"images/K_{K}.png")
 
 
-def plot_fix_M(M_list):
+def plot_fix_M(M_list, make_super_fig=False):
     for M in M_list:
         data_path = f"./parameters/M_{M}.pkl"
         if not os.path.exists(data_path):
@@ -238,6 +239,27 @@ def plot_fix_M(M_list):
         axis.set_title(f"M = {M}")
         axis.grid(True)
         plt.savefig(f"images/M_{M}.png")
+
+    if make_super_fig:
+        fig, axes = plt.subplots(numpy.ceil(len(M_list) // 2).astype(numpy.int64), 2, figsize=(32, 32))
+        for M, axis in zip(M_list, axes.flatten()):
+            data_path = f"./parameters/M_{M}.pkl"
+            if not os.path.exists(data_path):
+                print(f"M = {M} hasn't been simulated.")
+                continue
+            data_reload = reload_doc(data_path)
+            vals = data_reload["doc"]
+            max_K = vals.shape[0] - 1
+            xx = numpy.arange(M + 1, max_K + 1)
+            axis.set_xticks(xx)
+            axis.plot(xx, vals[xx])
+            axis.set_title(f"M = {M}")
+            axis.grid(True)
+
+        time_stamp = f"{time.time()}".replace(".", "_")
+        path = f"images/super_fig_{time_stamp}.png"
+        plt.savefig(path)
+        plt.close(fig)
 
 
 if __name__ == '__main__':
