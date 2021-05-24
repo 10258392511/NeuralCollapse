@@ -1,6 +1,6 @@
-__pycache__
+*__pycache__
 .ipynb_checkpoints
 *.txt
-!loss_RGD.txt
-!loss_RTR.txt
+!*loss_RGD.txt
+!*loss_RTR.txt
 .DS_Store

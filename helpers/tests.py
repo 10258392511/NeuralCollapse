@@ -12,8 +12,9 @@ class TestSoftmax(unittest.TestCase):
         # print(f"{features.shape}, {labels.shape}")
         loss_gt = criterion(features, labels)
         loss = softmax_loss(features.numpy().T, labels.numpy())
-        print(f"gt: {loss_gt}, loss: {loss}")
-        self.assertAlmostEqual(loss, loss_gt.item(), msg=f"gt: {loss_gt}, loss: {loss}")
+        # print(f"gt: {loss_gt}, loss: {loss}")
+        # self.assertAlmostEqual(loss, loss_gt.item(), msg=f"gt: {loss_gt}, loss: {loss}")
+        self.assertTrue(numpy.allclose(loss_gt, loss), msg=f"gt: {loss_gt}, loss: {loss}")
 
 
 if __name__ == '__main__':
