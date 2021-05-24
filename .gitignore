@@ -3,4 +3,4 @@
 *.txt
 !*loss_RGD.txt
 !*loss_RTR.txt
-.DS_Store
+*.DS_Store

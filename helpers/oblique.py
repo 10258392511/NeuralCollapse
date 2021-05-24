@@ -288,7 +288,9 @@ def solve_prob(loss_fn, solver, manifold, plot_loss=True, print_loss=False, temp
     if plot_loss:
         fig, axes = plt.subplots(1, 2)
         axes[0].plot(data[:, 0])
+        axes[0].set_title("objective")
         axes[1].plot(data[:, 1])
+        axes[1].set_title(r"$\Vert$ grad $\Vert_2$")
         plt.show()
 
     return Xopt, data
