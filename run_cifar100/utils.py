@@ -96,7 +96,8 @@ def train_epoch(model, train_loader, test_loader, optimizer, device, train_args,
         # (Optional) Save the halfway-through model here
         ################################
         if epoch in validate_epochs:
-            model.plot_last_W()
+            if epoch % 10 == 0:
+                model.plot_last_W()
             if out_dict is not None:
                 weights_list = out_dict.get("weights", [])
                 weights_list.append(model.last_W.detach().cpu().numpy())

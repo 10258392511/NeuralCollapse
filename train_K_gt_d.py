@@ -44,7 +44,7 @@ def train_cli(**kwargs):
         gamma = 0.8
         scheduler = torch.optim.lr_scheduler.StepLR(opt, step_size=step_size, gamma=gamma)
 
-    train_args = {"epoch": epochs, "validate_batch": [], "validate_epoch": [i for i in range(epochs) if i % 5 == 0],
+    train_args = {"epoch": epochs, "validate_batch": [], "validate_epoch": [i for i in range(epochs)],
                   "feature_decay": 0.01, "weight_decay": 0.01, "criterion": criterion}
 
     out_dict = {}
