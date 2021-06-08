@@ -185,7 +185,7 @@ def create_gif(weight_path: List[np.array], if_save=False, path=None):
     """
     # make sure we have constant frame size
     fig, axis = plt.subplots()
-    first_weight = weight_path[0]
+    first_weight = weight_path[-1]
     axis.scatter(first_weight[:, 0], first_weight[:, 1])
     max_lim = max(list(map(abs, list(axis.get_xlim()) + list(axis.get_ylim()))))
     plt.close()
