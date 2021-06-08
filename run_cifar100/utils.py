@@ -119,7 +119,7 @@ def save_model(model, model_path, log_dict, log_path):
         pickle.dump(log_dict, wf)
 
 
-def reload_model(model_to_reload, model_path, src="cuda", tgt="cuda"):
+def reload_model(model_to_reload, path, src="cuda", tgt="cuda"):
     device = torch.device(tgt)
     if src == tgt:
         model_to_reload.load_state_dict(torch.load(path))
@@ -226,8 +226,8 @@ def plot_feature(data_loader, model, device):
     for cls in range(len(data_loader.dataset.cls_list)):
         mask = (y_np == cls)
         features_selected = features[mask, ...]
-        label_idx = train_loader.dataset.cls_list[cls]
-        label = train_loader.dataset.classes[label_idx]
+        label_idx = data_loader.dataset.cls_list[cls]
+        label = data_loader.dataset.classes[label_idx]
         axis.scatter(features_selected[:, 0], features_selected[:, 1], label=label)
     axis.set_aspect("equal")
     axis.grid(True)
