@@ -1,6 +1,9 @@
+import numpy as np
 import torch
 import torch.nn as nn
 import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+import pickle
 from collections import OrderedDict
 from tqdm.notebook import tqdm
 from typing import List
@@ -52,6 +55,7 @@ def eval(model, test_loader, device, train_args):
     loss_avg = 0
     num_samples = 0
     num_correct_preds = 0
+    criterion = train_args["criterion"]
 
     for X, y in tqdm(test_loader, total=len(test_loader)):
         X = X.to(device)
@@ -134,6 +138,7 @@ def plot_curve(log_dict, figsize=(18, 9.6)):
     """
     log_dict: keys: "train_loss", "val_loss", "train_acc", "val_acc"
     """
+
     def extract_epoch_keys(keys):
         epoch_keys = []
         for i in range(len(keys) - 1):
@@ -183,6 +188,9 @@ def create_gif(weight_path: List[np.array], if_save=False, path=None):
     first_weight = weight_path[0]
     axis.scatter(first_weight[:, 0], first_weight[:, 1])
     max_lim = max(list(map(abs, list(axis.get_xlim()) + list(axis.get_ylim()))))
+    plt.close()
+
+    fig, axis = plt.subplots()
     axis.set_xlim(-max_lim, max_lim)
     axis.set_ylim(-max_lim, max_lim)
 
@@ -190,16 +198,18 @@ def create_gif(weight_path: List[np.array], if_save=False, path=None):
     scat = axis.scatter([], [])
 
     def update_plot(i):
-        scat.set_offsets(data[i])
+        scat.set_offsets(weight_path[i])
         axis.set_title(f"epoch {i + 1}")
         return scat
 
-    ani = animation.FuncAnimation(fig, update_plot, frames=epochs)
-    plt.show()
+    ani = animation.FuncAnimation(fig, update_plot, frames=len(weight_path))
+    # plt.show()
 
     if if_save:
         assert path is not None, "please specify a save path if you want to save the GIF"
         ani.save(path, writer="pillow", fps=2)  # specific writer for gif
+
+    plt.close()
 
 
 def plot_feature(data_loader, model, device):
