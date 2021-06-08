@@ -71,7 +71,3 @@ def demo_manifold_param(M=2, K=4):
 
     with torch.no_grad():
         print(f"{model.W}, {model.W.norm(dim=1)}")  # should be different from init but still unit-norm
-
-
-if __name__ == '__main__':
-    demo_manifold_tensor()
