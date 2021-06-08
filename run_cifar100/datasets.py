@@ -1,5 +1,8 @@
 import numpy as np
-import torch
+import pandas as pd
+import matplotlib.pyplot as plt
+import torchvision.transforms as T
+from torch.utils.data import DataLoader
 from torchvision.datasets import CIFAR100
 from torchvision.utils import make_grid
 
@@ -45,6 +48,11 @@ def select_k_cls(num_cls, batch_size, if_plot_batch=False, **kwargs):
     """
     Returns train loader and test loader.
     """
+    if "transformer" not in kwargs:
+        transformer = T.Compose([
+            T.ToTensor(),
+            T.Normalize(mean=[0.4914, 0.4822, 0.4465], std=[0.2023, 0.1994, 0.2010])
+        ])
     tmp_train_dataset = CIFAR100("./data", transform=None, download=True)
     classes = np.random.choice(len(tmp_train_dataset.classes), num_cls, replace=False)
     train_dataset = SampledCIFAR100(classes, root="./data",
@@ -75,4 +83,4 @@ def select_k_cls(num_cls, batch_size, if_plot_batch=False, **kwargs):
 
 
 if __name__ == '__main__':
-    train_loader, test_loader = select_k_cls(num_cls=5, batch_size=BATCH_SIZE, if_plot_batch=True)
+    train_loader, test_loader = select_k_cls(num_cls=5, batch_size=128, if_plot_batch=True)
