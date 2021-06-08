@@ -34,7 +34,7 @@ def train_cli(**kwargs):
 
     device=torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu")
     train_loader, test_loader = select_k_cls(num_cls=K, batch_size=batch_size)
-    model = ResNetAdapt(M, K, oblique_feature=kwargs["feature_man"], oblique_weight=kwargs["weight_man"]).to(device)
+    model = ResNetAdapt(M, K, oblique_feature=kwargs["feature_man"], oblique_weight=kwargs["W_man"]).to(device)
     criterion = nn.CrossEntropyLoss()
 
     opt = geoopt.optim.RiemannianAdam([param for param in model.parameters() if param.requires_grad], lr=lr)
@@ -58,7 +58,7 @@ def train_cli(**kwargs):
     if not os.path.exists(cifar100_dir):
         os.mkdir(cifar100_dir)
 
-    base = (f"{cifar100_dir}/epoch_{epochs}_K_{K}_{kwargs['weight_man']}_M_{M}_{kwargs['feature_man']}_"
+    base = (f"{cifar100_dir}/epoch_{epochs}_K_{K}_{kwargs['W_man']}_M_{M}_{kwargs['feature_man']}_"
             + "{data_type}.{suffix}").format
 
     save_model(model, base(data_type="model", suffix="pt"), log_dict, base(data_type="curve", suffix="pkl"))
