@@ -10,4 +10,4 @@ When I run the solver it throws an error saying "TensorFlow" has no "Session". M
 by dynamic graph as PyTorch, so there's no "Session". I changed "problem.py" where the error comes from a little forcing the library to use autograd. If anything alike occurs, maybe 
 you can use the "problem.py" in the repo.
 
-# CIFAR100 Colab Notebook [here](https://colab.research.google.com/notebook#fileId=1RJtgRV7DYKQOtaZes7rBcuI6AgYGzKdR)
+# CIFAR100 Colab Notebook [here](https://drive.google.com/file/d/1DHzJKXrbV7E07r9E3SSDTa4CoehdGQ19/view?usp=sharing)
