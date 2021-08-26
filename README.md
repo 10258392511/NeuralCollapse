@@ -1,5 +1,6 @@
 # NeuralCollapse
 This is the repo for Neural Collapse project.
+![](https://github.com/10258392511/NeuralCollapse/blob/main/cifar100_params/epoch_30_K_5_True_M_2_True_dymanics.gif)
 
 # Notes
 Please install autograd & pymanopt following [this page](https://www.pymanopt.org/):
